@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="HexDefinition" format=3 uid="uid://c2g532uo8ex3"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_mk3un"]
+[ext_resource type="Script" uid="uid://b0duh2rlesw8h" path="res://scripts/Cards/Definitions/HexDefinition.cs" id="2_hfmi0"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_xd8fa"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_51lol"]
+script = ExtResource("1_mk3un")
+
+[resource]
+script = ExtResource("2_hfmi0")
+_visuals = SubResource("Resource_51lol")
+_deckOverrides = SubResource("Resource_xd8fa")

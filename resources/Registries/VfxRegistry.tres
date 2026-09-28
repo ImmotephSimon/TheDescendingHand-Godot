@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="VfxRegistry" format=3 uid="uid://bwo4s5rwcqeqa"]
+
+[ext_resource type="Script" uid="uid://1qffio8ec83h" path="res://scripts/Cards/Vfx/VfxRegistry.cs" id="1_2q8f2"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_onphp"]
+
+[resource]
+script = ExtResource("1_2q8f2")

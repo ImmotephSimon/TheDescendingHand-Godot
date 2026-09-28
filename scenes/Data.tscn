@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bkfj60jsva04p"]
+
+[ext_resource type="Script" uid="uid://fq0lnfateita" path="res://scripts/Core/GameData.cs" id="1_errqn"]
+[ext_resource type="Resource" uid="uid://peiby3r7jnio" path="res://resources/Registries/ItemRegistry.tres" id="2_ik6w2"]
+[ext_resource type="Resource" uid="uid://x1ufpsbway6w" path="res://resources/Registries/CardRegistry.tres" id="3_nylgv"]
+[ext_resource type="Resource" uid="uid://dop8lmp2fivpx" path="res://resources/Registries/ServerPrefabRegistry.tres" id="4_0p2pt"]
+[ext_resource type="Resource" uid="uid://bwo4s5rwcqeqa" path="res://resources/Registries/VfxRegistry.tres" id="5_iqw7l"]
+
+[node name="GameData" type="Node" unique_id=1499996926]
+script = ExtResource("1_errqn")
+Cards = ExtResource("3_nylgv")
+Items = ExtResource("2_ik6w2")
+ServerPrefabs = ExtResource("4_0p2pt")
+Vfx = ExtResource("5_iqw7l")
+metadata/_custom_type_script = "uid://fq0lnfateita"

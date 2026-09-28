@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="HexBurstDefinition" format=3 uid="uid://s8ptshhdaojv"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_0w7kr"]
+[ext_resource type="Script" uid="uid://ccqo28y5vbcqg" path="res://scripts/Cards/Definitions/HexBurstDefinition.cs" id="2_41063"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_5msoc"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_1nvrj"]
+script = ExtResource("1_0w7kr")
+
+[resource]
+script = ExtResource("2_41063")
+_visuals = SubResource("Resource_1nvrj")
+_deckOverrides = SubResource("Resource_5msoc")

@@ -1,0 +1,282 @@
+[
+	{
+		"Name": "Strength",
+		"Modifier": [
+			{
+				"FinalValue": 2,
+				"MathOp": "Added",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/red/T_red_52_Tex.T_red_52_Tex'"
+	},
+	{
+		"Name": "Willpower",
+		"Modifier": [
+			{
+				"FinalValue": 2,
+				"MathOp": "Added",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_11_Tex.T_azul_11_Tex'"
+	},
+	{
+		"Name": "Instinct",
+		"Modifier": [
+			{
+				"FinalValue": 2,
+				"MathOp": "Added",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/green/T_green_30_Tex.T_green_30_Tex'"
+	},
+	{
+		"Name": "Life",
+		"Modifier": [
+			{
+				"FinalValue": 0.02,
+				"MathOp": "Additive",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Life"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/red/T_red_13_Tex.T_red_13_Tex'"
+	},
+	{
+		"Name": "Mana",
+		"Modifier": [
+			{
+				"FinalValue": 2,
+				"MathOp": "Added",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Mana"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_21_Tex.T_azul_21_Tex'"
+	},
+	{
+		"Name": "Armour",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Armour"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/red/T_red_12_Tex.T_red_12_Tex'"
+	},
+	{
+		"Name": "Evasion",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Evasion"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/green/T_green_39_Tex.T_green_39_Tex'"
+	},
+	{
+		"Name": "Physical_Damage",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Physical.Physical'",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.Damage"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/red/T_red_11_Tex.T_red_11_Tex'"
+	},
+	{
+		"Name": "Fire_Damage",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Fire.Fire'",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.Damage"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/red/T_red_10_Tex.T_red_10_Tex'"
+	},
+	{
+		"Name": "Cold_Damage",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Cold.Cold'",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.Damage"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_14_Tex.T_azul_14_Tex'"
+	},
+	{
+		"Name": "Lightning_Damage",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Lightning.Lightning'",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.Damage"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_10_Tex.T_azul_10_Tex'"
+	},
+	{
+		"Name": "Chaos_Damage",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Chaos.Chaos'",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.Damage"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_8_Tex.T_azul_8_Tex'"
+	},
+	{
+		"Name": "Cast_Speed",
+		"Modifier": [
+			{
+				"FinalValue": 0.05,
+				"MathOp": "Additive",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.CastSpeed"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/green/T_green_60_Tex.T_green_60_Tex'"
+	},
+	{
+		"Name": "Critical",
+		"Modifier": [
+			{
+				"FinalValue": 0.05,
+				"MathOp": "Additive",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Offense.Critical"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/green/T_green_44_Tex.T_green_44_Tex'"
+	},
+	{
+		"Name": "Movement",
+		"Modifier": [
+			{
+				"FinalValue": 0.03,
+				"MathOp": "Additive",
+				"Restriction": "None",
+				"Modifier":
+				{
+					"TagName": "Mod.Stat.Movement"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/green/T_green_46_Tex.T_green_46_Tex'"
+	},
+	{
+		"Name": "Chaos_Duration",
+		"Modifier": [
+			{
+				"FinalValue": 0.05,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Chaos.Chaos'",
+				"Modifier":
+				{
+					"TagName": "Mod.Utility.Duration"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/green/T_green_25_Tex.T_green_25_Tex'"
+	},
+	{
+		"Name": "Projectile_Time_Dilation",
+		"Modifier": [
+			{
+				"FinalValue": 0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Projectile.Projectile'",
+				"Modifier":
+				{
+					"TagName": "Mod.Utility.TimeDilation"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_55_Tex.T_azul_55_Tex'"
+	},
+	{
+		"Name": "Reduced_Projectile_Time_Dilation",
+		"Modifier": [
+			{
+				"FinalValue": -0.1,
+				"MathOp": "Additive",
+				"Restriction": "/Script/SecondTopDown.PDA_Restriction'/Game/TopDown/Blueprints/StatModifiers/Restrictions/Projectile.Projectile'",
+				"Modifier":
+				{
+					"TagName": "Mod.Utility.TimeDilation"
+				}
+			}
+		],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_55_Tex.T_azul_55_Tex'"
+	},
+	{
+		"Name": "Flammability",
+		"Modifier": [],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/red/T_red_28_Tex.T_red_28_Tex'"
+	},
+	{
+		"Name": "Buffering",
+		"Modifier": [],
+		"Texture": "/Script/Engine.Texture2D'/Game/MS/textures/azul/T_azul_52_Tex.T_azul_52_Tex'"
+	}
+]

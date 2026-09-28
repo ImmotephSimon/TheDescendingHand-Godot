@@ -1,0 +1,339 @@
+[
+	{
+		"Name": "node_0",
+		"Neighbors": [
+			"node_1",
+			"node_17",
+			"node_3",
+			"node_10"
+		]
+	},
+	{
+		"Name": "node_1",
+		"Neighbors": [
+			"node_17",
+			"node_0"
+		]
+	},
+	{
+		"Name": "node_17",
+		"Neighbors": [
+			"node_0",
+			"node_6",
+			"node_1"
+		]
+	},
+	{
+		"Name": "node_2",
+		"Neighbors": [
+			"node_11",
+			"node_12",
+			"node_13",
+			"node_15",
+			"node_34",
+			"node_31"
+		]
+	},
+	{
+		"Name": "node_11",
+		"Neighbors": [
+			"node_12",
+			"node_18",
+			"node_2",
+			"node_19"
+		]
+	},
+	{
+		"Name": "node_12",
+		"Neighbors": [
+			"node_19",
+			"node_2",
+			"node_11"
+		]
+	},
+	{
+		"Name": "node_18",
+		"Neighbors": [
+			"node_19",
+			"node_11"
+		]
+	},
+	{
+		"Name": "node_19",
+		"Neighbors": [
+			"node_11",
+			"node_12",
+			"node_18"
+		]
+	},
+	{
+		"Name": "node_13",
+		"Neighbors": [
+			"node_14",
+			"node_20",
+			"node_2",
+			"node_21",
+			"node_23"
+		]
+	},
+	{
+		"Name": "node_14",
+		"Neighbors": [
+			"node_21",
+			"node_13",
+			"node_43"
+		]
+	},
+	{
+		"Name": "node_20",
+		"Neighbors": [
+			"node_21",
+			"node_13"
+		]
+	},
+	{
+		"Name": "node_21",
+		"Neighbors": [
+			"node_13",
+			"node_14",
+			"node_20"
+		]
+	},
+	{
+		"Name": "node_3",
+		"Neighbors": [
+			"node_4",
+			"node_29",
+			"node_0"
+		]
+	},
+	{
+		"Name": "node_4",
+		"Neighbors": [
+			"node_5",
+			"node_3"
+		]
+	},
+	{
+		"Name": "node_5",
+		"Neighbors": [
+			"node_30",
+			"node_4",
+			"node_36"
+		]
+	},
+	{
+		"Name": "node_29",
+		"Neighbors": [
+			"node_30",
+			"node_34",
+			"node_3"
+		]
+	},
+	{
+		"Name": "node_30",
+		"Neighbors": [
+			"node_5",
+			"node_29"
+		]
+	},
+	{
+		"Name": "node_6",
+		"Neighbors": [
+			"node_7",
+			"node_17"
+		]
+	},
+	{
+		"Name": "node_7",
+		"Neighbors": [
+			"node_8",
+			"node_9",
+			"node_6"
+		]
+	},
+	{
+		"Name": "node_8",
+		"Neighbors": [
+			"node_9",
+			"node_7"
+		]
+	},
+	{
+		"Name": "node_9",
+		"Neighbors": [
+			"node_7",
+			"node_8"
+		]
+	},
+	{
+		"Name": "node_10",
+		"Neighbors": [
+			"node_28",
+			"node_0",
+			"node_44"
+		]
+	},
+	{
+		"Name": "node_28",
+		"Neighbors": [
+			"node_15",
+			"node_10"
+		]
+	},
+	{
+		"Name": "node_15",
+		"Neighbors": [
+			"node_25",
+			"node_2",
+			"node_28",
+			"node_16"
+		]
+	},
+	{
+		"Name": "node_16",
+		"Neighbors": [
+			"node_15"
+		]
+	},
+	{
+		"Name": "node_25",
+		"Neighbors": [
+			"node_26",
+			"node_27",
+			"node_15"
+		]
+	},
+	{
+		"Name": "node_26",
+		"Neighbors": [
+			"node_27",
+			"node_25"
+		]
+	},
+	{
+		"Name": "node_27",
+		"Neighbors": [
+			"node_25",
+			"node_26"
+		]
+	},
+	{
+		"Name": "node_22",
+		"Neighbors": [
+			"node_23",
+			"node_24"
+		]
+	},
+	{
+		"Name": "node_23",
+		"Neighbors": [
+			"node_13",
+			"node_22",
+			"node_24"
+		]
+	},
+	{
+		"Name": "node_24",
+		"Neighbors": [
+			"node_22",
+			"node_23"
+		]
+	},
+	{
+		"Name": "node_34",
+		"Neighbors": [
+			"node_33",
+			"node_2",
+			"node_38",
+			"node_29",
+			"node_32"
+		]
+	},
+	{
+		"Name": "node_33",
+		"Neighbors": [
+			"node_35",
+			"node_34"
+		]
+	},
+	{
+		"Name": "node_35",
+		"Neighbors": [
+			"node_32",
+			"node_33"
+		]
+	},
+	{
+		"Name": "node_32",
+		"Neighbors": [
+			"node_34",
+			"node_35"
+		]
+	},
+	{
+		"Name": "node_36",
+		"Neighbors": [
+			"node_5"
+		]
+	},
+	{
+		"Name": "node_31",
+		"Neighbors": [
+			"node_2"
+		]
+	},
+	{
+		"Name": "node_37",
+		"Neighbors": [
+			"node_39",
+			"node_41",
+			"node_38"
+		]
+	},
+	{
+		"Name": "node_38",
+		"Neighbors": [
+			"node_37",
+			"node_34"
+		]
+	},
+	{
+		"Name": "node_39",
+		"Neighbors": [
+			"node_40",
+			"node_37"
+		]
+	},
+	{
+		"Name": "node_41",
+		"Neighbors": [
+			"node_42",
+			"node_37"
+		]
+	},
+	{
+		"Name": "node_40",
+		"Neighbors": [
+			"node_39"
+		]
+	},
+	{
+		"Name": "node_42",
+		"Neighbors": [
+			"node_41"
+		]
+	},
+	{
+		"Name": "node_43",
+		"Neighbors": [
+			"node_14"
+		]
+	},
+	{
+		"Name": "node_44",
+		"Neighbors": [
+			"node_10"
+		]
+	}
+]

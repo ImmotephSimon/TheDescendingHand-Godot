@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dkb0yv0bshq25"]
+
+[ext_resource type="Script" uid="uid://e1a0bvyablk1" path="res://scripts/Client/ClientBridge.cs" id="1_7f04x"]
+[ext_resource type="Script" uid="uid://cxk5erlkiwfvk" path="res://scripts/Client/VFXView.cs" id="2_6ty0n"]
+
+[node name="ClientBridge" type="Node" unique_id=1686044777]
+script = ExtResource("1_7f04x")
+
+[node name="VFXView" type="Node3D" parent="." unique_id=1072416630]
+script = ExtResource("2_6ty0n")
+metadata/_custom_type_script = "uid://cxk5erlkiwfvk"

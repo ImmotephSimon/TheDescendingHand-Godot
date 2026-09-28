@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RockslideDefinition" format=3 uid="uid://ce46fusqemury"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_at3u0"]
+[ext_resource type="Script" uid="uid://d2ae7jxbi1ji6" path="res://scripts/Cards/Definitions/RockslideDefinition.cs" id="2_aa5sh"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_afo55"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_2hj5b"]
+script = ExtResource("1_at3u0")
+
+[resource]
+script = ExtResource("2_aa5sh")
+_visuals = SubResource("Resource_2hj5b")
+_deckOverrides = SubResource("Resource_afo55")

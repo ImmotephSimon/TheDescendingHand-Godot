@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TagReactions" format=3 uid="uid://eufsr44p7c2x"]
+
+[ext_resource type="Script" uid="uid://isoxm66sqn0j" path="res://scripts/Tags/TagReactions.cs" id="1_ays1e"]
+[ext_resource type="Script" uid="uid://llvuvkiyjo0o" path="res://scripts/Tags/TagReactions/FrailtyReaction.cs" id="1_vavh1"]
+[ext_resource type="Script" uid="uid://diybd4fqpyass" path="res://scripts/Tags/TagReactions/FreezeReaction.cs" id="2_mqcu6"]
+[ext_resource type="Script" uid="uid://c0ko26p4llkdp" path="res://scripts/Tags/TagReactions/TagOnHitReaction.cs" id="3_h42wk"]
+
+[sub_resource type="Resource" id="Resource_i604o"]
+script = ExtResource("1_vavh1")
+metadata/_custom_type_script = "uid://llvuvkiyjo0o"
+
+[sub_resource type="Resource" id="Resource_32gi8"]
+script = ExtResource("2_mqcu6")
+metadata/_custom_type_script = "uid://diybd4fqpyass"
+
+[sub_resource type="Resource" id="Resource_vavh1"]
+script = ExtResource("3_h42wk")
+metadata/_custom_type_script = "uid://c0ko26p4llkdp"
+
+[resource]
+script = ExtResource("1_ays1e")
+Reactions = Array[Object]([SubResource("Resource_i604o"), SubResource("Resource_32gi8"), SubResource("Resource_vavh1")])
+metadata/_custom_type_script = "uid://isoxm66sqn0j"

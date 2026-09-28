@@ -1,0 +1,97 @@
+[
+    {
+        "Definition": "BaseMult",
+        "Weight": 3,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "BaseMin",
+        "Weight": 2,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "BaseMax",
+        "Weight": 2,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "FireFlat",
+        "Weight": 1,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "ColdFlat",
+        "Weight": 1,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "LightningFlat",
+        "Weight": 1,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "EleMult",
+        "Weight": 4,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "Mana",
+        "Weight": 1,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "ManaDamage",
+        "Weight": 1,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "CastSpeed",
+        "Weight": 1,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "PhysInc",
+        "Weight": 1,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "LifeCost",
+        "Weight": 1,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "ManaCost",
+        "Weight": 1,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "ChaosDuration",
+        "Weight": 3,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "ImplicitDamage",
+        "Weight": 0,
+        "Slot": "Implicit"
+    },
+    {
+        "Definition": "ImplicitCritHigh",
+        "Weight": 0,
+        "Slot": "Implicit"
+    },
+    {
+        "Definition": "ImplicitCritLow",
+        "Weight": 0,
+        "Slot": "Implicit"
+    },
+    {
+        "Definition": "ImplicitSpeedHigh",
+        "Weight": 0,
+        "Slot": "Implicit"
+    },
+    {
+        "Definition": "ImplicitSpeedLow",
+        "Weight": 0,
+        "Slot": "Implicit"
+    }
+]

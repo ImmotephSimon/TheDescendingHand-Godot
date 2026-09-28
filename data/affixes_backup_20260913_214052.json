@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "name": "ChaosDuration",
+      "id": "c1b24f79-44dd-4607-b291-6feffd183e75",
+      "modifierTag": "Mod.Utility.Duration",
+      "restrictionTag": "Restriction.Chaos",
+      "mathOp": "Additive",
+      "baseValue": 0.4,
+      "slot": "Prefix"
+    },
+    {
+      "name": "Glancing",
+      "id": "eacf713a-c572-4ed3-81bd-959141717141",
+      "modifierTag": "Mod.Defense.Glancing",
+      "restrictionTag": "",
+      "mathOp": "Additive",
+      "baseValue": 0.3,
+      "slot": "Prefix"
+    },
+    {
+      "name": "ImplicitMitiPhys",
+      "id": "05b64c21-baaf-4561-a839-4b9d66f7ac3f",
+      "modifierTag": "Mod.Defense.Mitigation",
+      "restrictionTag": "Restriction.Physical",
+      "mathOp": "Added",
+      "baseValue": 100.0,
+      "slot": "Implicit"
+    },
+    {
+      "name": "IncImplicit",
+      "id": "15668c15-f6c5-4343-b21d-edf3203badc6",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "",
+      "mathOp": "Additive",
+      "baseValue": 0.1,
+      "slot": "Unset"
+    },
+    {
+      "name": "Life",
+      "id": "e91a2b90-31ec-4da5-b118-c8eccd4a11c1",
+      "modifierTag": "Mod.Stat.Health",
+      "restrictionTag": "",
+      "mathOp": "Additive",
+      "baseValue": 0.2,
+      "slot": "Prefix"
+    },
+    {
+      "name": "LifeCost",
+      "id": "964d78b8-9e44-4826-ac91-5417cae5be1f",
+      "modifierTag": "Mod.Utility.Cost",
+      "restrictionTag": "Mod.Stat.Health",
+      "mathOp": "Additive",
+      "baseValue": -0.3,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Mana",
+      "id": "a213bc12-f3e4-48e7-ab9e-5e1c61093ae2",
+      "modifierTag": "Mod.Stat.Mana",
+      "restrictionTag": "",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "ManaCost",
+      "id": "a0c3ab5e-4dd4-422e-963e-1dcd5edc4697",
+      "modifierTag": "Mod.Utility.Cost",
+      "restrictionTag": "Mod.Stat.Mana",
+      "mathOp": "Additive",
+      "baseValue": -0.01,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Miti1",
+      "id": "89112c04-d4c3-4bf5-a3a2-5ea90215befe",
+      "modifierTag": "Mod.Defense.Mitigation",
+      "restrictionTag": "Restriction.Physical",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Miti2",
+      "id": "b4d2099a-d8ee-4be5-87ea-0a5ea45ab228",
+      "modifierTag": "Mod.Defense.Mitigation",
+      "restrictionTag": "Restriction.Element.Fire",
+      "mathOp": "Added",
+      "baseValue": 60.0,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Miti3",
+      "id": "362abea7-5fb9-4bf1-9ec7-fff62708e785",
+      "modifierTag": "Mod.Defense.Mitigation",
+      "restrictionTag": "Restriction.Element.Cold",
+      "mathOp": "Added",
+      "baseValue": 60.0,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Miti4",
+      "id": "aadec790-35e1-4bc1-b9b4-d46d14d937b6",
+      "modifierTag": "Mod.Defense.Mitigation",
+      "restrictionTag": "Restriction.Element.Lightning",
+      "mathOp": "Added",
+      "baseValue": 60.0,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Miti5",
+      "id": "2208a74e-7cef-415e-9ee6-87a44d21aa44",
+      "modifierTag": "Mod.Defense.Mitigation",
+      "restrictionTag": "Restriction.Chaos",
+      "mathOp": "Added",
+      "baseValue": 60.0,
+      "slot": "Suffix"
+    },
+    {
+      "name": "Stun",
+      "id": "2208a74e-7cef-415e-9ee6-87a44d21aa44",
+      "modifierTag": "Mod.Utility.Duration",
+      "restrictionTag": "",
+      "mathOp": "Multiplicative",
+      "baseValue": 0.9,
+      "slot": "Prefix"
+    },
+    {
+      "name": "BaseMax",
+      "id": "a80e9a93-3bc5-4ad7-8e1d-7bb6c8b0ca88",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "Mod.Offense.Damage.Max",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "BaseMin",
+      "id": "2bd5ecbc-defe-4519-888f-1bbd1de15a37",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "Mod.Offense.Damage.Min",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "BaseMult",
+      "id": "c905cb57-01fb-4e60-96d2-ee1ece8a752e",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "",
+      "mathOp": "Multiplicative",
+      "baseValue": 3.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "CastSpeed",
+      "id": "35688220-4ad0-44d3-9406-43f7ae87be5e",
+      "modifierTag": "Mod.Offense.CastSpeed",
+      "restrictionTag": "",
+      "mathOp": "Multiplicative",
+      "baseValue": 1.3,
+      "slot": "Prefix"
+    },
+    {
+      "name": "ColdFlat",
+      "id": "ad48fab7-9ac0-481f-94ed-a794a90c35ad",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "Restriction.Element.Cold",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "EleMult",
+      "id": "8d99b13e-c2bb-4906-93c5-f3ec1b7c40d8",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "",
+      "mathOp": "Multiplicative",
+      "baseValue": 2.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "FireFlat",
+      "id": "5c34b123-ff47-46ed-b360-ab32fc6a7796",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "Restriction.Element.Fire",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "LightningFlat",
+      "id": "5406631e-a5c7-4c0a-872d-4715aef5ab8a",
+      "modifierTag": "Mod.Implicit",
+      "restrictionTag": "Restriction.Element.Lightning",
+      "mathOp": "Added",
+      "baseValue": 40.0,
+      "slot": "Prefix"
+    },
+    {
+      "name": "ManaDamage",
+      "id": "0eac233e-4c0e-451a-9922-2a54e9cf7e5f",
+      "modifierTag": "Mod.Offense.DamagePerMana",
+      "restrictionTag": "",
+      "mathOp": "Additive",
+      "baseValue": 0.2,
+      "slot": "Prefix"
+    },
+    {
+      "name": "PhysInc",
+      "id": "53bdbc32-500b-4fb0-b70c-479af43d80ba",
+      "modifierTag": "Mod.Offense.Damage",
+      "restrictionTag": "Restriction.Physical",
+      "mathOp": "Additive",
+      "baseValue": 0.2,
+      "slot": "Prefix"
+    }
+  ]
+}

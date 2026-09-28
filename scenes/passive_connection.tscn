@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c0ed1mnrly1v6"]
+
+[sub_resource type="Gradient" id="Gradient_bdha1"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ty8dw"]
+gradient = SubResource("Gradient_bdha1")
+width = 100
+height = 3
+
+[node name="TextureRect" type="TextureRect" unique_id=53433522]
+offset_right = 100.0
+offset_bottom = 5.0
+texture = SubResource("GradientTexture2D_ty8dw")

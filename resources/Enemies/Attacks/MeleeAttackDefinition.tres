@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="MeleeAttackDefinition" format=3 uid="uid://bfrsxq0fh0185"]
+
+[ext_resource type="Script" uid="uid://bo76oiu4ityfh" path="res://scripts/Enemy/Definition/MeleeAttackDefinition.cs" id="1_soevj"]
+
+[resource]
+script = ExtResource("1_soevj")

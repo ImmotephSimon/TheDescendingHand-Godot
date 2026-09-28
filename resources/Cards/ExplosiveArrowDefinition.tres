@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ExplosiveArrowDefinition" format=3 uid="uid://chygralhql67d"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_25bhy"]
+[ext_resource type="Script" uid="uid://kmf6kdug3bqe" path="res://scripts/Cards/Definitions/ExplosiveArrowDefinition.cs" id="2_joayb"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_ilmga"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_ldw3h"]
+script = ExtResource("1_25bhy")
+
+[resource]
+script = ExtResource("2_joayb")
+_visuals = SubResource("Resource_ldw3h")
+_deckOverrides = SubResource("Resource_ilmga")

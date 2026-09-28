@@ -1,0 +1,30 @@
+# Godot 4+ specific ignores
+.godot/
+.nomedia
+~*.dll
+
+# Godot-specific ignores
+export.cfg
+export_credentials.cfg
+*.tmp
+
+# Imported translations
+*.translation
+
+# Mono / C# specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# Visual Studio / IDE specific files
+.vs/
+*.csproj.user
+*.sln.docstates
+
+# Stray Unity leftovers / metadata files
+*.meta
+*.prefab
+*.unity
+*.asset
+*.controller
+*.overrideController

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" format=3 uid="uid://cghbuyc5qt1pm"]
+
+[ext_resource type="Script" uid="uid://diybd4fqpyass" path="res://scripts/Tags/TagReactions/FreezeReaction.cs" id="1_u0wp8"]
+
+[resource]
+script = ExtResource("1_u0wp8")

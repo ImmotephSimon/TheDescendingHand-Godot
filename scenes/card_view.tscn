@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dg3d42ldhfkah"]
+
+[ext_resource type="Script" uid="uid://0522sarsnwt2" path="res://scripts/Cards/View/CardView.cs" id="1_apa55"]
+[ext_resource type="Texture2D" uid="uid://bolwlbryp5kec" path="res://textures/CardBackground_new2.jpg" id="2_gcmmc"]
+
+[node name="CardView" type="Control" unique_id=1146557974 node_paths=PackedStringArray("_title", "_description", "_keybind", "_art")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 250.0
+offset_bottom = 400.0
+script = ExtResource("1_apa55")
+_title = NodePath("Title")
+_description = NodePath("Description")
+_keybind = NodePath("Keybinding")
+_art = NodePath("Art")
+metadata/_custom_type_script = "uid://0522sarsnwt2"
+
+[node name="Background" type="TextureRect" parent="." unique_id=1652598126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gcmmc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1345943100]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 101.0
+offset_right = 221.0
+offset_bottom = 181.0
+text = "Title
+"
+
+[node name="Description" type="RichTextLabel" parent="." unique_id=1442912202]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 197.805
+offset_right = 234.0
+offset_bottom = 331.0
+text = "Desc"
+
+[node name="Keybinding" type="RichTextLabel" parent="." unique_id=1139021510]
+layout_mode = 1
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Art" type="TextureRect" parent="." unique_id=1877095881]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 10.0
+offset_right = 207.0
+offset_bottom = 90.0

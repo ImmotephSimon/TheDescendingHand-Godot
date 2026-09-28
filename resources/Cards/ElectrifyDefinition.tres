@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="ElectrifyDefinition" format=3 uid="uid://324wnfv5iehi"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_spfcw"]
+[ext_resource type="Script" uid="uid://ch0pbexmdwkyx" path="res://scripts/Cards/CardComponents/Utility/LaunchDirection.cs" id="2_jf7ed"]
+[ext_resource type="Script" uid="uid://dkefqbyg16sce" path="res://scripts/Cards/CardComponents/ProjectileInfo.cs" id="3_fn3hp"]
+[ext_resource type="Script" uid="uid://ct1wjg1xus2ee" path="res://scripts/Cards/Definitions/ElectrifyDefinition.cs" id="4_mt0ao"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_rn358"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_w4ht8"]
+script = ExtResource("1_spfcw")
+
+[sub_resource type="Resource" id="Resource_vd36m"]
+script = ExtResource("2_jf7ed")
+metadata/_custom_type_script = "uid://ch0pbexmdwkyx"
+
+[sub_resource type="Resource" id="Resource_1is7h"]
+script = ExtResource("3_fn3hp")
+Direction = SubResource("Resource_vd36m")
+metadata/_custom_type_script = "uid://dkefqbyg16sce"
+
+[resource]
+script = ExtResource("4_mt0ao")
+projectileInfo = SubResource("Resource_1is7h")
+effectiveness = 1.0
+_visuals = SubResource("Resource_w4ht8")
+_deckOverrides = SubResource("Resource_rn358")

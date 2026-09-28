@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c3wk5hqtas4w7"]
+
+[ext_resource type="Script" uid="uid://ds0ck8i0ok4u0" path="res://scripts/PassiveTree/PassiveTooltipView.cs" id="1_f7ebd"]
+
+[node name="PassiveTooltip" type="Control" unique_id=1705972559]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_f7ebd")
+metadata/_custom_type_script = "uid://ds0ck8i0ok4u0"

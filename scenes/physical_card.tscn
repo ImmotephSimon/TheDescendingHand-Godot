@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bu7kjlhls73pq"]
+
+[ext_resource type="PackedScene" uid="uid://dg3d42ldhfkah" path="res://scenes/card_view.tscn" id="1_m4ynn"]
+[ext_resource type="Script" uid="uid://c0tjs1ipoo4ga" path="res://scripts/CardHandFollower.cs" id="2_rd301"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_664kn"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_1n7lp"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_th11y"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_1n7lp")
+
+[node name="PhysicalCard" type="Node3D" unique_id=929317494]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1623582301]
+mesh = SubResource("QuadMesh_664kn")
+surface_material_override/0 = SubResource("StandardMaterial3D_th11y")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1850202371]
+transparent_bg = true
+size = Vector2i(250, 400)
+
+[node name="CardView" parent="SubViewport" unique_id=1146557974 instance=ExtResource("1_m4ynn")]
+
+[node name="CardHandFollower" type="Node" parent="." unique_id=2072636038 node_paths=PackedStringArray("_view")]
+script = ExtResource("2_rd301")
+_view = NodePath("../SubViewport/CardView")
+metadata/_custom_type_script = "uid://c0tjs1ipoo4ga"

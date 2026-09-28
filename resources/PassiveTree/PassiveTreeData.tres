@@ -1,0 +1,1553 @@
+[gd_resource type="Resource" script_class="PassiveTreeData" format=3 uid="uid://bxhnd0l5kr0fb"]
+
+[ext_resource type="Script" uid="uid://5nlj2f0bdw6f" path="res://scripts/PassiveTree/PassiveNodeConnection.cs" id="1_5jymo"]
+[ext_resource type="Script" uid="uid://cewu06tbl02fh" path="res://scripts/PassiveTree/PassiveNodeType.cs" id="2_5r822"]
+[ext_resource type="Script" uid="uid://bx4xevcu75nv" path="res://scripts/StatModifiers/StatModifier.cs" id="3_c5jhi"]
+[ext_resource type="Script" uid="uid://q712caqynqcm" path="res://scripts/Tags/GameTag.cs" id="4_80fea"]
+[ext_resource type="Script" uid="uid://dnwgqc736r3ta" path="res://scripts/Tags/TagContainer.cs" id="5_hshb7"]
+[ext_resource type="Script" uid="uid://nphju7nfus7w" path="res://scripts/Items/Affixes/TagRequirement.cs" id="6_vl6pp"]
+[ext_resource type="Texture2D" uid="uid://duoiu8iblxviv" path="res://textures/Icons/red/T_red_52_Tex.PNG" id="7_kbcux"]
+[ext_resource type="Texture2D" uid="uid://cif4rxcvkg25f" path="res://textures/Icons/azul/T_azul_11_Tex.PNG" id="8_x6jn5"]
+[ext_resource type="Texture2D" uid="uid://dlq27mks8br7i" path="res://textures/Icons/green/T_green_30_Tex.PNG" id="9_k6xtg"]
+[ext_resource type="Texture2D" uid="uid://bvlfgna45ndl3" path="res://textures/Icons/red/T_red_13_Tex.PNG" id="10_2wd87"]
+[ext_resource type="Texture2D" uid="uid://yxoarieubdgc" path="res://textures/Icons/azul/T_azul_21_Tex.PNG" id="11_ph46r"]
+[ext_resource type="Texture2D" uid="uid://3w4550k3foh6" path="res://textures/Icons/red/T_red_12_Tex.PNG" id="12_h1mjl"]
+[ext_resource type="Texture2D" uid="uid://bufkdchepxssf" path="res://textures/Icons/green/T_green_39_Tex.PNG" id="13_tkxg1"]
+[ext_resource type="Texture2D" uid="uid://745f0efslsqn" path="res://textures/Icons/red/T_red_11_Tex.PNG" id="14_waq6h"]
+[ext_resource type="Texture2D" uid="uid://ba5ypybomvybk" path="res://textures/Icons/red/T_red_10_Tex.PNG" id="15_dp325"]
+[ext_resource type="Texture2D" uid="uid://c8ntqyg0f45td" path="res://textures/Icons/azul/T_azul_14_Tex.PNG" id="16_32ecv"]
+[ext_resource type="Texture2D" uid="uid://bvg2u7ahusseq" path="res://textures/Icons/azul/T_azul_10_Tex.PNG" id="17_ukutj"]
+[ext_resource type="Texture2D" uid="uid://dtcxfgeds5u26" path="res://textures/Icons/azul/T_azul_8_Tex.PNG" id="18_0u4de"]
+[ext_resource type="Texture2D" uid="uid://c36f1bgwvsi4k" path="res://textures/Icons/green/T_green_60_Tex.PNG" id="19_41kvs"]
+[ext_resource type="Texture2D" uid="uid://bvomcq8pynjml" path="res://textures/Icons/green/T_green_44_Tex.PNG" id="20_8sb1b"]
+[ext_resource type="Texture2D" uid="uid://cq5ghs63sx2vp" path="res://textures/Icons/green/T_green_46_Tex.PNG" id="21_i2yy5"]
+[ext_resource type="Texture2D" uid="uid://clrsym4ssrj6b" path="res://textures/Icons/green/T_green_25_Tex.PNG" id="22_ixnb2"]
+[ext_resource type="Texture2D" uid="uid://c73c7ft6rf14j" path="res://textures/Icons/azul/T_azul_55_Tex.PNG" id="23_5biih"]
+[ext_resource type="Texture2D" uid="uid://fvgo1tccdcng" path="res://textures/Icons/red/T_red_28_Tex.PNG" id="24_masek"]
+[ext_resource type="Texture2D" uid="uid://b7krjxbe5jfag" path="res://textures/Icons/azul/T_azul_52_Tex.PNG" id="25_73nr3"]
+[ext_resource type="Script" uid="uid://b0wqngv2kkyg0" path="res://scripts/PassiveTree/PassiveNode.cs" id="26_hwk28"]
+[ext_resource type="Script" uid="uid://bcl1jwq566mr5" path="res://scripts/PassiveTree/PassiveNodeCost.cs" id="27_843ae"]
+[ext_resource type="Script" uid="uid://cf2tigkoohr6h" path="res://scripts/PassiveTree/PassiveTreeData.cs" id="28_ci4vp"]
+
+[sub_resource type="Resource" id="Resource_2gter"]
+script = ExtResource("1_5jymo")
+A = "node_0"
+B = "node_1"
+
+[sub_resource type="Resource" id="Resource_30b2d"]
+script = ExtResource("1_5jymo")
+A = "node_0"
+B = "node_17"
+
+[sub_resource type="Resource" id="Resource_f776u"]
+script = ExtResource("1_5jymo")
+A = "node_0"
+B = "node_3"
+
+[sub_resource type="Resource" id="Resource_nr0ju"]
+script = ExtResource("1_5jymo")
+A = "node_0"
+B = "node_10"
+
+[sub_resource type="Resource" id="Resource_w70bh"]
+script = ExtResource("1_5jymo")
+A = "node_1"
+B = "node_17"
+
+[sub_resource type="Resource" id="Resource_gwq75"]
+script = ExtResource("1_5jymo")
+A = "node_17"
+B = "node_6"
+
+[sub_resource type="Resource" id="Resource_7mbqs"]
+script = ExtResource("1_5jymo")
+A = "node_2"
+B = "node_11"
+
+[sub_resource type="Resource" id="Resource_vcrnt"]
+script = ExtResource("1_5jymo")
+A = "node_2"
+B = "node_12"
+
+[sub_resource type="Resource" id="Resource_746r6"]
+script = ExtResource("1_5jymo")
+A = "node_2"
+B = "node_13"
+
+[sub_resource type="Resource" id="Resource_murd5"]
+script = ExtResource("1_5jymo")
+A = "node_2"
+B = "node_15"
+
+[sub_resource type="Resource" id="Resource_ocyrb"]
+script = ExtResource("1_5jymo")
+A = "node_2"
+B = "node_34"
+
+[sub_resource type="Resource" id="Resource_ix5r1"]
+script = ExtResource("1_5jymo")
+A = "node_2"
+B = "node_31"
+
+[sub_resource type="Resource" id="Resource_5v5sd"]
+script = ExtResource("1_5jymo")
+A = "node_11"
+B = "node_12"
+
+[sub_resource type="Resource" id="Resource_mp3ea"]
+script = ExtResource("1_5jymo")
+A = "node_11"
+B = "node_18"
+
+[sub_resource type="Resource" id="Resource_iybr7"]
+script = ExtResource("1_5jymo")
+A = "node_11"
+B = "node_19"
+
+[sub_resource type="Resource" id="Resource_2gv28"]
+script = ExtResource("1_5jymo")
+A = "node_12"
+B = "node_19"
+
+[sub_resource type="Resource" id="Resource_uqcej"]
+script = ExtResource("1_5jymo")
+A = "node_18"
+B = "node_19"
+
+[sub_resource type="Resource" id="Resource_hdrsl"]
+script = ExtResource("1_5jymo")
+A = "node_13"
+B = "node_14"
+
+[sub_resource type="Resource" id="Resource_8dexl"]
+script = ExtResource("1_5jymo")
+A = "node_13"
+B = "node_20"
+
+[sub_resource type="Resource" id="Resource_6873w"]
+script = ExtResource("1_5jymo")
+A = "node_13"
+B = "node_21"
+
+[sub_resource type="Resource" id="Resource_hbdtp"]
+script = ExtResource("1_5jymo")
+A = "node_13"
+B = "node_23"
+
+[sub_resource type="Resource" id="Resource_mjlbk"]
+script = ExtResource("1_5jymo")
+A = "node_14"
+B = "node_21"
+
+[sub_resource type="Resource" id="Resource_6es0u"]
+script = ExtResource("1_5jymo")
+A = "node_14"
+B = "node_43"
+
+[sub_resource type="Resource" id="Resource_ily8r"]
+script = ExtResource("1_5jymo")
+A = "node_20"
+B = "node_21"
+
+[sub_resource type="Resource" id="Resource_hbm47"]
+script = ExtResource("1_5jymo")
+A = "node_3"
+B = "node_4"
+
+[sub_resource type="Resource" id="Resource_17xuf"]
+script = ExtResource("1_5jymo")
+A = "node_3"
+B = "node_29"
+
+[sub_resource type="Resource" id="Resource_3mbnh"]
+script = ExtResource("1_5jymo")
+A = "node_4"
+B = "node_5"
+
+[sub_resource type="Resource" id="Resource_tu2qe"]
+script = ExtResource("1_5jymo")
+A = "node_5"
+B = "node_30"
+
+[sub_resource type="Resource" id="Resource_je3uy"]
+script = ExtResource("1_5jymo")
+A = "node_5"
+B = "node_36"
+
+[sub_resource type="Resource" id="Resource_yikev"]
+script = ExtResource("1_5jymo")
+A = "node_29"
+B = "node_30"
+
+[sub_resource type="Resource" id="Resource_d2pls"]
+script = ExtResource("1_5jymo")
+A = "node_29"
+B = "node_34"
+
+[sub_resource type="Resource" id="Resource_huq11"]
+script = ExtResource("1_5jymo")
+A = "node_6"
+B = "node_7"
+
+[sub_resource type="Resource" id="Resource_6b1fs"]
+script = ExtResource("1_5jymo")
+A = "node_7"
+B = "node_8"
+
+[sub_resource type="Resource" id="Resource_vs5mq"]
+script = ExtResource("1_5jymo")
+A = "node_7"
+B = "node_9"
+
+[sub_resource type="Resource" id="Resource_b15sm"]
+script = ExtResource("1_5jymo")
+A = "node_8"
+B = "node_9"
+
+[sub_resource type="Resource" id="Resource_e1517"]
+script = ExtResource("1_5jymo")
+A = "node_10"
+B = "node_28"
+
+[sub_resource type="Resource" id="Resource_ubjle"]
+script = ExtResource("1_5jymo")
+A = "node_10"
+B = "node_44"
+
+[sub_resource type="Resource" id="Resource_s0blq"]
+script = ExtResource("1_5jymo")
+A = "node_28"
+B = "node_15"
+
+[sub_resource type="Resource" id="Resource_g16ta"]
+script = ExtResource("1_5jymo")
+A = "node_15"
+B = "node_25"
+
+[sub_resource type="Resource" id="Resource_j4tio"]
+script = ExtResource("1_5jymo")
+A = "node_15"
+B = "node_16"
+
+[sub_resource type="Resource" id="Resource_m36pi"]
+script = ExtResource("1_5jymo")
+A = "node_25"
+B = "node_26"
+
+[sub_resource type="Resource" id="Resource_vyo2d"]
+script = ExtResource("1_5jymo")
+A = "node_25"
+B = "node_27"
+
+[sub_resource type="Resource" id="Resource_3ewno"]
+script = ExtResource("1_5jymo")
+A = "node_26"
+B = "node_27"
+
+[sub_resource type="Resource" id="Resource_v5quc"]
+script = ExtResource("1_5jymo")
+A = "node_22"
+B = "node_23"
+
+[sub_resource type="Resource" id="Resource_eg3po"]
+script = ExtResource("1_5jymo")
+A = "node_22"
+B = "node_24"
+
+[sub_resource type="Resource" id="Resource_yekqv"]
+script = ExtResource("1_5jymo")
+A = "node_23"
+B = "node_24"
+
+[sub_resource type="Resource" id="Resource_lokh1"]
+script = ExtResource("1_5jymo")
+A = "node_34"
+B = "node_33"
+
+[sub_resource type="Resource" id="Resource_qcuhv"]
+script = ExtResource("1_5jymo")
+A = "node_34"
+B = "node_38"
+
+[sub_resource type="Resource" id="Resource_hcgcp"]
+script = ExtResource("1_5jymo")
+A = "node_34"
+B = "node_32"
+
+[sub_resource type="Resource" id="Resource_rt7g3"]
+script = ExtResource("1_5jymo")
+A = "node_33"
+B = "node_35"
+
+[sub_resource type="Resource" id="Resource_weg22"]
+script = ExtResource("1_5jymo")
+A = "node_35"
+B = "node_32"
+
+[sub_resource type="Resource" id="Resource_81w6i"]
+script = ExtResource("1_5jymo")
+A = "node_37"
+B = "node_39"
+
+[sub_resource type="Resource" id="Resource_pgmoy"]
+script = ExtResource("1_5jymo")
+A = "node_37"
+B = "node_41"
+
+[sub_resource type="Resource" id="Resource_2xjd7"]
+script = ExtResource("1_5jymo")
+A = "node_37"
+B = "node_38"
+
+[sub_resource type="Resource" id="Resource_bpay7"]
+script = ExtResource("1_5jymo")
+A = "node_39"
+B = "node_40"
+
+[sub_resource type="Resource" id="Resource_uppxs"]
+script = ExtResource("1_5jymo")
+A = "node_41"
+B = "node_42"
+
+[sub_resource type="Resource" id="Resource_u0x1d"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_n8tqp"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_u0x1d")
+
+[sub_resource type="Resource" id="Resource_2xl8f"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_o0u0x"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_2xl8f")
+Value = 2.0
+RequiredTags = SubResource("Resource_n8tqp")
+
+[sub_resource type="Resource" id="Resource_wcxxh"]
+script = ExtResource("2_5r822")
+Name = "Strength"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_o0u0x")])
+Texture = ExtResource("7_kbcux")
+
+[sub_resource type="Resource" id="Resource_kucmi"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_m0med"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_kucmi")
+
+[sub_resource type="Resource" id="Resource_xf4up"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_ksgge"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_xf4up")
+Value = 2.0
+RequiredTags = SubResource("Resource_m0med")
+
+[sub_resource type="Resource" id="Resource_n6h8n"]
+script = ExtResource("2_5r822")
+Name = "Willpower"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_ksgge")])
+Texture = ExtResource("8_x6jn5")
+
+[sub_resource type="Resource" id="Resource_w7yg6"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_nvqm0"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_w7yg6")
+
+[sub_resource type="Resource" id="Resource_x1aej"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_oj1ph"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_x1aej")
+Value = 2.0
+RequiredTags = SubResource("Resource_nvqm0")
+
+[sub_resource type="Resource" id="Resource_o27vl"]
+script = ExtResource("2_5r822")
+Name = "Instinct"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_oj1ph")])
+Texture = ExtResource("9_k6xtg")
+
+[sub_resource type="Resource" id="Resource_qc2fx"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_l3lqj"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_qc2fx")
+
+[sub_resource type="Resource" id="Resource_dndur"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Life"
+
+[sub_resource type="Resource" id="Resource_5jdfo"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_dndur")
+Op = 1
+Value = 0.02
+RequiredTags = SubResource("Resource_l3lqj")
+
+[sub_resource type="Resource" id="Resource_2jawq"]
+script = ExtResource("2_5r822")
+Name = "Life"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_5jdfo")])
+Texture = ExtResource("10_2wd87")
+
+[sub_resource type="Resource" id="Resource_jtdrv"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_ndm4y"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_jtdrv")
+
+[sub_resource type="Resource" id="Resource_ebmdd"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Mana"
+
+[sub_resource type="Resource" id="Resource_rqvim"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_ebmdd")
+Value = 2.0
+RequiredTags = SubResource("Resource_ndm4y")
+
+[sub_resource type="Resource" id="Resource_o3h6v"]
+script = ExtResource("2_5r822")
+Name = "Mana"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_rqvim")])
+Texture = ExtResource("11_ph46r")
+
+[sub_resource type="Resource" id="Resource_yoimr"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_j4ty7"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_yoimr")
+
+[sub_resource type="Resource" id="Resource_k147i"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Armour"
+
+[sub_resource type="Resource" id="Resource_mfton"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_k147i")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_j4ty7")
+
+[sub_resource type="Resource" id="Resource_05k4h"]
+script = ExtResource("2_5r822")
+Name = "Armour"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_mfton")])
+Texture = ExtResource("12_h1mjl")
+
+[sub_resource type="Resource" id="Resource_0anht"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_6nfix"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_0anht")
+
+[sub_resource type="Resource" id="Resource_ym28y"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Evasion"
+
+[sub_resource type="Resource" id="Resource_3ns8x"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_ym28y")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_6nfix")
+
+[sub_resource type="Resource" id="Resource_bacdl"]
+script = ExtResource("2_5r822")
+Name = "Evasion"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_3ns8x")])
+Texture = ExtResource("13_tkxg1")
+
+[sub_resource type="Resource" id="Resource_8verx"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_5wyr8"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_8verx")
+
+[sub_resource type="Resource" id="Resource_oxpgi"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.Damage"
+
+[sub_resource type="Resource" id="Resource_rakn0"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_oxpgi")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_5wyr8")
+
+[sub_resource type="Resource" id="Resource_4wryd"]
+script = ExtResource("2_5r822")
+Name = "Physical_Damage"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_rakn0")])
+Texture = ExtResource("14_waq6h")
+
+[sub_resource type="Resource" id="Resource_6yxoe"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_egeah"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_6yxoe")
+
+[sub_resource type="Resource" id="Resource_rge5o"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.Damage"
+
+[sub_resource type="Resource" id="Resource_uquk2"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_rge5o")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_egeah")
+
+[sub_resource type="Resource" id="Resource_2yroi"]
+script = ExtResource("2_5r822")
+Name = "Fire_Damage"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_uquk2")])
+Texture = ExtResource("15_dp325")
+
+[sub_resource type="Resource" id="Resource_1i0dy"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_8wu5q"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_1i0dy")
+
+[sub_resource type="Resource" id="Resource_4iru4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.Damage"
+
+[sub_resource type="Resource" id="Resource_bonqu"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_4iru4")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_8wu5q")
+
+[sub_resource type="Resource" id="Resource_tyuam"]
+script = ExtResource("2_5r822")
+Name = "Cold_Damage"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_bonqu")])
+Texture = ExtResource("16_32ecv")
+
+[sub_resource type="Resource" id="Resource_hxdu6"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_4vy3r"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_hxdu6")
+
+[sub_resource type="Resource" id="Resource_h3ull"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.Damage"
+
+[sub_resource type="Resource" id="Resource_tij1k"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_h3ull")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_4vy3r")
+
+[sub_resource type="Resource" id="Resource_s42st"]
+script = ExtResource("2_5r822")
+Name = "Lightning_Damage"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_tij1k")])
+Texture = ExtResource("17_ukutj")
+
+[sub_resource type="Resource" id="Resource_fueug"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_8o3ne"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_fueug")
+
+[sub_resource type="Resource" id="Resource_ftc0a"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.Damage"
+
+[sub_resource type="Resource" id="Resource_hunlp"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_ftc0a")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_8o3ne")
+
+[sub_resource type="Resource" id="Resource_46sdq"]
+script = ExtResource("2_5r822")
+Name = "Chaos_Damage"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_hunlp")])
+Texture = ExtResource("18_0u4de")
+
+[sub_resource type="Resource" id="Resource_p1ky7"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_insb1"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_p1ky7")
+
+[sub_resource type="Resource" id="Resource_gvhv4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.CastSpeed"
+
+[sub_resource type="Resource" id="Resource_8bodx"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_gvhv4")
+Op = 1
+Value = 0.05
+RequiredTags = SubResource("Resource_insb1")
+
+[sub_resource type="Resource" id="Resource_414ek"]
+script = ExtResource("2_5r822")
+Name = "Cast_Speed"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_8bodx")])
+Texture = ExtResource("19_41kvs")
+
+[sub_resource type="Resource" id="Resource_yl6bl"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_q5xyt"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_yl6bl")
+
+[sub_resource type="Resource" id="Resource_jblv4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Offense.Critical"
+
+[sub_resource type="Resource" id="Resource_1ahx3"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_jblv4")
+Op = 1
+Value = 0.05
+RequiredTags = SubResource("Resource_q5xyt")
+
+[sub_resource type="Resource" id="Resource_ja6lt"]
+script = ExtResource("2_5r822")
+Name = "Critical"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_1ahx3")])
+Texture = ExtResource("20_8sb1b")
+
+[sub_resource type="Resource" id="Resource_vbqsa"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_rc7rp"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_vbqsa")
+
+[sub_resource type="Resource" id="Resource_h2cqa"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Movement"
+
+[sub_resource type="Resource" id="Resource_e53yt"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_h2cqa")
+Op = 1
+Value = 0.03
+RequiredTags = SubResource("Resource_rc7rp")
+
+[sub_resource type="Resource" id="Resource_cbkim"]
+script = ExtResource("2_5r822")
+Name = "Movement"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_e53yt")])
+Texture = ExtResource("21_i2yy5")
+
+[sub_resource type="Resource" id="Resource_hlarx"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_dmboa"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_hlarx")
+
+[sub_resource type="Resource" id="Resource_ycbs4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Utility.Duration"
+
+[sub_resource type="Resource" id="Resource_k7l2c"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_ycbs4")
+Op = 1
+Value = 0.05
+RequiredTags = SubResource("Resource_dmboa")
+
+[sub_resource type="Resource" id="Resource_gl012"]
+script = ExtResource("2_5r822")
+Name = "Chaos_Duration"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_k7l2c")])
+Texture = ExtResource("22_ixnb2")
+
+[sub_resource type="Resource" id="Resource_osflp"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_upv0b"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_osflp")
+
+[sub_resource type="Resource" id="Resource_wmux4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Utility.TimeDilation"
+
+[sub_resource type="Resource" id="Resource_f5luv"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_wmux4")
+Op = 1
+Value = 0.1
+RequiredTags = SubResource("Resource_upv0b")
+
+[sub_resource type="Resource" id="Resource_px07e"]
+script = ExtResource("2_5r822")
+Name = "Projectile_Time_Dilation"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_f5luv")])
+Texture = ExtResource("23_5biih")
+
+[sub_resource type="Resource" id="Resource_ec7qw"]
+script = ExtResource("5_hshb7")
+
+[sub_resource type="Resource" id="Resource_2l1rp"]
+script = ExtResource("6_vl6pp")
+Tags = SubResource("Resource_ec7qw")
+
+[sub_resource type="Resource" id="Resource_orrym"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Utility.TimeDilation"
+
+[sub_resource type="Resource" id="Resource_yempc"]
+script = ExtResource("3_c5jhi")
+Stat = SubResource("Resource_orrym")
+Op = 1
+Value = -0.1
+RequiredTags = SubResource("Resource_2l1rp")
+
+[sub_resource type="Resource" id="Resource_trcla"]
+script = ExtResource("2_5r822")
+Name = "Reduced_Projectile_Time_Dilation"
+Modifiers = Array[ExtResource("3_c5jhi")]([SubResource("Resource_yempc")])
+Texture = ExtResource("23_5biih")
+
+[sub_resource type="Resource" id="Resource_pv3ak"]
+script = ExtResource("2_5r822")
+Name = "Flammability"
+Texture = ExtResource("24_masek")
+
+[sub_resource type="Resource" id="Resource_y7t2a"]
+script = ExtResource("2_5r822")
+Name = "Buffering"
+Texture = ExtResource("25_73nr3")
+
+[sub_resource type="Resource" id="Resource_5atbr"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_hp0hp"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_5atbr")
+
+[sub_resource type="Resource" id="Resource_38yn8"]
+script = ExtResource("26_hwk28")
+Name = "node_0"
+Type = "Life"
+Position = Vector2(-258.5382, -239.422)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_hp0hp")])
+Cluster = "A"
+
+[sub_resource type="Resource" id="Resource_leuqj"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_a4uf8"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_leuqj")
+
+[sub_resource type="Resource" id="Resource_uwm4f"]
+script = ExtResource("26_hwk28")
+Name = "node_1"
+Type = "Life"
+Position = Vector2(-120.16211, -321.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_a4uf8")])
+Cluster = "A"
+
+[sub_resource type="Resource" id="Resource_rrgmm"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_r36r7"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_rrgmm")
+
+[sub_resource type="Resource" id="Resource_vlrg5"]
+script = ExtResource("26_hwk28")
+Name = "node_17"
+Type = "Life"
+Position = Vector2(-220.16211, -321.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_r36r7")])
+Cluster = "A"
+
+[sub_resource type="Resource" id="Resource_qdnrj"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_28jqk"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_qdnrj")
+
+[sub_resource type="Resource" id="Resource_emhaw"]
+script = ExtResource("26_hwk28")
+Name = "node_2"
+Type = "Armour"
+Position = Vector2(79.83789, -221.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_28jqk")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_3hrjy"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_201nu"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_3hrjy")
+
+[sub_resource type="Resource" id="Resource_o1kbm"]
+script = ExtResource("26_hwk28")
+Name = "node_11"
+Type = "Physical_Damage"
+Position = Vector2(285.6848, -295.61)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_201nu")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_c5nv3"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_jkeoi"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_c5nv3")
+
+[sub_resource type="Resource" id="Resource_pgfqt"]
+script = ExtResource("26_hwk28")
+Name = "node_12"
+Type = "Physical_Damage"
+Position = Vector2(165.2102, -320.63672)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_jkeoi")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_1y603"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_mrh6t"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_1y603")
+
+[sub_resource type="Resource" id="Resource_tlalb"]
+script = ExtResource("26_hwk28")
+Name = "node_18"
+Type = "Physical_Damage"
+Position = Vector2(279.8379, -221.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_mrh6t")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_11a8d"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_kc8hr"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_11a8d")
+
+[sub_resource type="Resource" id="Resource_kkm1t"]
+script = ExtResource("26_hwk28")
+Name = "node_19"
+Type = "Critical"
+Position = Vector2(353.2102, -363.03674)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_kc8hr")])
+Cluster = "H"
+
+[sub_resource type="Resource" id="Resource_id0pq"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_wybmd"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_id0pq")
+
+[sub_resource type="Resource" id="Resource_q35ls"]
+script = ExtResource("26_hwk28")
+Name = "node_13"
+Type = "Fire_Damage"
+Position = Vector2(529.8379, 28.715088)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_wybmd")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_kidny"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_ao4w2"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_kidny")
+
+[sub_resource type="Resource" id="Resource_08sov"]
+script = ExtResource("26_hwk28")
+Name = "node_14"
+Type = "Fire_Damage"
+Position = Vector2(629.8379, 28.715088)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_ao4w2")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_dgyr0"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_cse6t"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_dgyr0")
+
+[sub_resource type="Resource" id="Resource_2f3r1"]
+script = ExtResource("26_hwk28")
+Name = "node_20"
+Type = "Fire_Damage"
+Position = Vector2(579.8379, 128.71509)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_cse6t")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_ibwc4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_g7mk1"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_ibwc4")
+
+[sub_resource type="Resource" id="Resource_ojku3"]
+script = ExtResource("26_hwk28")
+Name = "node_21"
+Type = "Fire_Damage"
+Position = Vector2(679.8379, 128.71509)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_g7mk1")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_adyup"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_p2x27"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_adyup")
+
+[sub_resource type="Resource" id="Resource_8e7er"]
+script = ExtResource("26_hwk28")
+Name = "node_3"
+Type = "Mana"
+Position = Vector2(-370.1621, -221.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_p2x27")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_abeev"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_w5vo2"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_abeev")
+
+[sub_resource type="Resource" id="Resource_g44al"]
+script = ExtResource("26_hwk28")
+Name = "node_4"
+Type = "Mana"
+Position = Vector2(-470.1621, -171.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_w5vo2")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_71gmt"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_dy653"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_71gmt")
+
+[sub_resource type="Resource" id="Resource_0u12n"]
+script = ExtResource("26_hwk28")
+Name = "node_5"
+Type = "Mana"
+Position = Vector2(-570.1621, -221.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_dy653")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_d708u"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_brb5e"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_d708u")
+
+[sub_resource type="Resource" id="Resource_4eafi"]
+script = ExtResource("26_hwk28")
+Name = "node_29"
+Type = "Cast_Speed"
+Position = Vector2(-470.1621, -71.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_brb5e")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_jon4r"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_v7u0v"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_jon4r")
+
+[sub_resource type="Resource" id="Resource_kiusq"]
+script = ExtResource("26_hwk28")
+Name = "node_30"
+Type = "Mana"
+Position = Vector2(-570.1621, -121.28491)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_v7u0v")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_xflbk"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_6tdd5"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_xflbk")
+
+[sub_resource type="Resource" id="Resource_s1j4c"]
+script = ExtResource("26_hwk28")
+Name = "node_6"
+Type = "Movement"
+Position = Vector2(-320.1621, -421.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_6tdd5")])
+Cluster = "R"
+
+[sub_resource type="Resource" id="Resource_qih2f"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_sbcub"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_qih2f")
+
+[sub_resource type="Resource" id="Resource_qc2kb"]
+script = ExtResource("26_hwk28")
+Name = "node_7"
+Type = "Movement"
+Position = Vector2(-420.1621, -521.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_sbcub")])
+Cluster = "R"
+
+[sub_resource type="Resource" id="Resource_77rf4"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_5wtlh"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_77rf4")
+
+[sub_resource type="Resource" id="Resource_p286u"]
+script = ExtResource("26_hwk28")
+Name = "node_8"
+Type = "Movement"
+Position = Vector2(-603.6157, -537.1666)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_5wtlh")])
+Cluster = "R"
+
+[sub_resource type="Resource" id="Resource_wcx0t"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_7cpbh"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_wcx0t")
+
+[sub_resource type="Resource" id="Resource_caul4"]
+script = ExtResource("26_hwk28")
+Name = "node_9"
+Type = "Evasion"
+Position = Vector2(-470.1621, -621.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_7cpbh")])
+Cluster = "R"
+
+[sub_resource type="Resource" id="Resource_w5w1b"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_fqlbx"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_w5w1b")
+
+[sub_resource type="Resource" id="Resource_i2n7o"]
+script = ExtResource("26_hwk28")
+Name = "node_10"
+Type = "Mana"
+Position = Vector2(-370.1621, -321.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_fqlbx")])
+Cluster = "V"
+
+[sub_resource type="Resource" id="Resource_trqjo"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_1sble"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_trqjo")
+
+[sub_resource type="Resource" id="Resource_6mcgm"]
+script = ExtResource("26_hwk28")
+Name = "node_28"
+Type = "Movement"
+Position = Vector2(-270.1621, -521.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_1sble")])
+Cluster = "W"
+
+[sub_resource type="Resource" id="Resource_txj7w"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_ifujw"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_txj7w")
+
+[sub_resource type="Resource" id="Resource_khy3i"]
+script = ExtResource("26_hwk28")
+Name = "node_15"
+Type = "Armour"
+Position = Vector2(29.83789, -471.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_ifujw")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_d48ap"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_y4i6l"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_d48ap")
+
+[sub_resource type="Resource" id="Resource_26tut"]
+script = ExtResource("26_hwk28")
+Name = "node_16"
+Type = "Instinct"
+Position = Vector2(54.93152, -622.36084)
+Role = 1
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_y4i6l")])
+Cluster = "Y"
+
+[sub_resource type="Resource" id="Resource_tmshm"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_huvty"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_tmshm")
+
+[sub_resource type="Resource" id="Resource_7pjpr"]
+script = ExtResource("26_hwk28")
+Name = "node_25"
+Type = "Life"
+Position = Vector2(229.83789, -471.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_huvty")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_5wg7a"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_n1x6a"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_5wg7a")
+
+[sub_resource type="Resource" id="Resource_2seah"]
+script = ExtResource("26_hwk28")
+Name = "node_26"
+Type = "Armour"
+Position = Vector2(279.8379, -571.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_n1x6a")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_3ebww"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_p6i5g"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_3ebww")
+
+[sub_resource type="Resource" id="Resource_384qd"]
+script = ExtResource("26_hwk28")
+Name = "node_27"
+Type = "Life"
+Position = Vector2(358.10327, -472.01)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_p6i5g")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_r3jxr"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_qf2m3"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_r3jxr")
+
+[sub_resource type="Resource" id="Resource_317ch"]
+script = ExtResource("26_hwk28")
+Name = "node_22"
+Type = "Cold_Damage"
+Position = Vector2(429.8379, -571.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_qf2m3")])
+Cluster = "c"
+
+[sub_resource type="Resource" id="Resource_elvb1"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_0dgyq"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_elvb1")
+
+[sub_resource type="Resource" id="Resource_71pgx"]
+script = ExtResource("26_hwk28")
+Name = "node_23"
+Type = "Cold_Damage"
+Position = Vector2(529.8379, -571.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_0dgyq")])
+Cluster = "c"
+
+[sub_resource type="Resource" id="Resource_tapa0"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Instinct"
+
+[sub_resource type="Resource" id="Resource_cdj6h"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_tapa0")
+
+[sub_resource type="Resource" id="Resource_rioyq"]
+script = ExtResource("26_hwk28")
+Name = "node_24"
+Type = "Cold_Damage"
+Position = Vector2(479.8379, -671.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_cdj6h")])
+Cluster = "c"
+
+[sub_resource type="Resource" id="Resource_aoxae"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_k6j8k"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_aoxae")
+
+[sub_resource type="Resource" id="Resource_22jvl"]
+script = ExtResource("26_hwk28")
+Name = "node_31"
+Type = "Strength"
+Position = Vector2(-136.35266, -86.46765)
+Role = 1
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_k6j8k")])
+Cluster = "D"
+
+[sub_resource type="Resource" id="Resource_2artq"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_l4va4"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_2artq")
+
+[sub_resource type="Resource" id="Resource_rqwkh"]
+script = ExtResource("26_hwk28")
+Name = "node_32"
+Type = "Lightning_Damage"
+Position = Vector2(44.007324, 90.128174)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_l4va4")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_gl5nl"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_snpug"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_gl5nl")
+
+[sub_resource type="Resource" id="Resource_hskpn"]
+script = ExtResource("26_hwk28")
+Name = "node_33"
+Type = "Lightning_Damage"
+Position = Vector2(-41.19275, 152.67078)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_snpug")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_ypycn"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_oxw3a"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_ypycn")
+
+[sub_resource type="Resource" id="Resource_ohj8r"]
+script = ExtResource("26_hwk28")
+Name = "node_34"
+Type = "Mana"
+Position = Vector2(-39.15796, 78.87134)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_oxw3a")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_q6hw6"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_r7f1e"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_q6hw6")
+
+[sub_resource type="Resource" id="Resource_xepfj"]
+script = ExtResource("26_hwk28")
+Name = "node_35"
+Type = "Lightning_Damage"
+Position = Vector2(73.85437, 207.20276)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_r7f1e")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_8k7xi"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_v6pkg"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_8k7xi")
+
+[sub_resource type="Resource" id="Resource_18kaw"]
+script = ExtResource("26_hwk28")
+Name = "node_36"
+Type = "Willpower"
+Position = Vector2(-726.5519, -270.40662)
+Role = 1
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_v6pkg")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_4qj4g"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_xa3ch"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_4qj4g")
+
+[sub_resource type="Resource" id="Resource_lnm78"]
+script = ExtResource("26_hwk28")
+Name = "node_37"
+Type = "Mana"
+Position = Vector2(-141.57202, 410.90503)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_xa3ch")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_k1ng5"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_tgxun"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_k1ng5")
+
+[sub_resource type="Resource" id="Resource_1d5i0"]
+script = ExtResource("26_hwk28")
+Name = "node_38"
+Type = "Mana"
+Position = Vector2(-227.20166, 275.6748)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_tgxun")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_lpja3"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_av438"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_lpja3")
+
+[sub_resource type="Resource" id="Resource_shuhy"]
+script = ExtResource("26_hwk28")
+Name = "node_39"
+Type = "Projectile_Time_Dilation"
+Position = Vector2(-4.54895, 401.781)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_av438")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_gi08c"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_nqd1w"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_gi08c")
+
+[sub_resource type="Resource" id="Resource_dbwtp"]
+script = ExtResource("26_hwk28")
+Name = "node_40"
+Type = "Projectile_Time_Dilation"
+Position = Vector2(175.05664, 534.89136)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_nqd1w")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_qfg15"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_0doii"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_qfg15")
+
+[sub_resource type="Resource" id="Resource_uaeo2"]
+script = ExtResource("26_hwk28")
+Name = "node_41"
+Type = "Reduced_Projectile_Time_Dilation"
+Position = Vector2(-148.7721, 530.905)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_0doii")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_0ghdb"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_0ahf1"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_0ghdb")
+
+[sub_resource type="Resource" id="Resource_uwo8m"]
+script = ExtResource("26_hwk28")
+Name = "node_42"
+Type = "Reduced_Projectile_Time_Dilation"
+Position = Vector2(6.7929688, 671.2849)
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_0ahf1")])
+Cluster = "M"
+
+[sub_resource type="Resource" id="Resource_sfcru"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_ygp64"]
+script = ExtResource("27_843ae")
+Amount = 3
+Attribute = SubResource("Resource_sfcru")
+
+[sub_resource type="Resource" id="Resource_0scx8"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_yxo50"]
+script = ExtResource("27_843ae")
+Amount = 15
+Attribute = SubResource("Resource_0scx8")
+
+[sub_resource type="Resource" id="Resource_iut5f"]
+script = ExtResource("26_hwk28")
+Name = "node_43"
+Type = "Flammability"
+Position = Vector2(726.552, -151.6222)
+Role = 2
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_ygp64")])
+Cluster = "D"
+Requirement = Array[ExtResource("27_843ae")]([SubResource("Resource_yxo50")])
+
+[sub_resource type="Resource" id="Resource_nns7g"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_jevdr"]
+script = ExtResource("27_843ae")
+Amount = 1
+Attribute = SubResource("Resource_nns7g")
+
+[sub_resource type="Resource" id="Resource_77vb3"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Willpower"
+
+[sub_resource type="Resource" id="Resource_6gylr"]
+script = ExtResource("27_843ae")
+Amount = 5
+Attribute = SubResource("Resource_77vb3")
+
+[sub_resource type="Resource" id="Resource_ltqot"]
+script = ExtResource("4_80fea")
+TagId = "Mod.Stat.Strength"
+
+[sub_resource type="Resource" id="Resource_kkck2"]
+script = ExtResource("27_843ae")
+Amount = 5
+Attribute = SubResource("Resource_ltqot")
+
+[sub_resource type="Resource" id="Resource_pfmik"]
+script = ExtResource("26_hwk28")
+Name = "node_44"
+Type = "Buffering"
+Position = Vector2(-507.28284, -352.35657)
+Role = 2
+Cost = Array[ExtResource("27_843ae")]([SubResource("Resource_jevdr")])
+Cluster = "s"
+Requirement = Array[ExtResource("27_843ae")]([SubResource("Resource_6gylr"), SubResource("Resource_kkck2")])
+
+[resource]
+script = ExtResource("28_ci4vp")
+Nodes = Array[ExtResource("26_hwk28")]([SubResource("Resource_38yn8"), SubResource("Resource_uwm4f"), SubResource("Resource_vlrg5"), SubResource("Resource_emhaw"), SubResource("Resource_o1kbm"), SubResource("Resource_pgfqt"), SubResource("Resource_tlalb"), SubResource("Resource_kkm1t"), SubResource("Resource_q35ls"), SubResource("Resource_08sov"), SubResource("Resource_2f3r1"), SubResource("Resource_ojku3"), SubResource("Resource_8e7er"), SubResource("Resource_g44al"), SubResource("Resource_0u12n"), SubResource("Resource_4eafi"), SubResource("Resource_kiusq"), SubResource("Resource_s1j4c"), SubResource("Resource_qc2kb"), SubResource("Resource_p286u"), SubResource("Resource_caul4"), SubResource("Resource_i2n7o"), SubResource("Resource_6mcgm"), SubResource("Resource_khy3i"), SubResource("Resource_26tut"), SubResource("Resource_7pjpr"), SubResource("Resource_2seah"), SubResource("Resource_384qd"), SubResource("Resource_317ch"), SubResource("Resource_71pgx"), SubResource("Resource_rioyq"), SubResource("Resource_22jvl"), SubResource("Resource_rqwkh"), SubResource("Resource_hskpn"), SubResource("Resource_ohj8r"), SubResource("Resource_xepfj"), SubResource("Resource_18kaw"), SubResource("Resource_lnm78"), SubResource("Resource_1d5i0"), SubResource("Resource_shuhy"), SubResource("Resource_dbwtp"), SubResource("Resource_uaeo2"), SubResource("Resource_uwo8m"), SubResource("Resource_iut5f"), SubResource("Resource_pfmik")])
+NodeTypes = Array[ExtResource("2_5r822")]([SubResource("Resource_wcxxh"), SubResource("Resource_n6h8n"), SubResource("Resource_o27vl"), SubResource("Resource_2jawq"), SubResource("Resource_o3h6v"), SubResource("Resource_05k4h"), SubResource("Resource_bacdl"), SubResource("Resource_4wryd"), SubResource("Resource_2yroi"), SubResource("Resource_tyuam"), SubResource("Resource_s42st"), SubResource("Resource_46sdq"), SubResource("Resource_414ek"), SubResource("Resource_ja6lt"), SubResource("Resource_cbkim"), SubResource("Resource_gl012"), SubResource("Resource_px07e"), SubResource("Resource_trcla"), SubResource("Resource_pv3ak"), SubResource("Resource_y7t2a")])
+Connections = Array[ExtResource("1_5jymo")]([SubResource("Resource_2gter"), SubResource("Resource_30b2d"), SubResource("Resource_f776u"), SubResource("Resource_nr0ju"), SubResource("Resource_w70bh"), SubResource("Resource_gwq75"), SubResource("Resource_7mbqs"), SubResource("Resource_vcrnt"), SubResource("Resource_746r6"), SubResource("Resource_murd5"), SubResource("Resource_ocyrb"), SubResource("Resource_ix5r1"), SubResource("Resource_5v5sd"), SubResource("Resource_mp3ea"), SubResource("Resource_iybr7"), SubResource("Resource_2gv28"), SubResource("Resource_uqcej"), SubResource("Resource_hdrsl"), SubResource("Resource_8dexl"), SubResource("Resource_6873w"), SubResource("Resource_hbdtp"), SubResource("Resource_mjlbk"), SubResource("Resource_6es0u"), SubResource("Resource_ily8r"), SubResource("Resource_hbm47"), SubResource("Resource_17xuf"), SubResource("Resource_3mbnh"), SubResource("Resource_tu2qe"), SubResource("Resource_je3uy"), SubResource("Resource_yikev"), SubResource("Resource_d2pls"), SubResource("Resource_huq11"), SubResource("Resource_6b1fs"), SubResource("Resource_vs5mq"), SubResource("Resource_b15sm"), SubResource("Resource_e1517"), SubResource("Resource_ubjle"), SubResource("Resource_s0blq"), SubResource("Resource_g16ta"), SubResource("Resource_j4tio"), SubResource("Resource_m36pi"), SubResource("Resource_vyo2d"), SubResource("Resource_3ewno"), SubResource("Resource_v5quc"), SubResource("Resource_eg3po"), SubResource("Resource_yekqv"), SubResource("Resource_lokh1"), SubResource("Resource_qcuhv"), SubResource("Resource_hcgcp"), SubResource("Resource_rt7g3"), SubResource("Resource_weg22"), SubResource("Resource_81w6i"), SubResource("Resource_pgmoy"), SubResource("Resource_2xjd7"), SubResource("Resource_bpay7"), SubResource("Resource_uppxs")])

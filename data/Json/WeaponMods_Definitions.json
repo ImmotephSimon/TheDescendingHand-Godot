@@ -1,0 +1,135 @@
+[
+  {
+    "Id": "BaseMult",
+    "BaseValue": 1.1,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Multiplicative",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "BaseMin",
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Added",
+    "RestrictionTag": "Mod.Offense.Damage.Min"
+  },
+  {
+    "Id": "BaseMax",
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Added",
+    "RestrictionTag": "Mod.Offense.Damage.Max"
+  },
+  {
+    "Id": "FireFlat",
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Added",
+    "RestrictionTag": "Restriction.Element.Fire"
+  },
+  {
+    "Id": "ColdFlat",
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Added",
+    "RestrictionTag": "Restriction.Element.Cold"
+  },
+  {
+    "Id": "LightningFlat",
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Added",
+    "RestrictionTag": "Restriction.Element.Lightning"
+  },
+  {
+    "Id": "EleMult",
+    "BaseValue": 1.1,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Multiplicative",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "Mana",
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Stat.Mana",
+    "MathOp": "Added",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "ManaDamage",
+    "BaseValue": 0.01,
+    "ModifierTag": "Mod.Offense.DamagePerMana",
+    "MathOp": "Additive",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "CastSpeed",
+    "BaseValue": 1.015,
+    "ModifierTag": "Mod.Offense.CastSpeed",
+    "MathOp": "Multiplicative",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "PhysInc",
+    "BaseValue": 0.01,
+    "ModifierTag": "Mod.Offense.Damage",
+    "MathOp": "Additive",
+    "RestrictionTag": "Restriction.Physical"
+  },
+  {
+    "Id": "LifeCost",
+    "BaseValue": -0.015,
+    "ModifierTag": "Mod.Utility.Cost",
+    "MathOp": "Additive",
+    "RestrictionTag": "Mod.Stat.Health"
+  },
+  {
+    "Id": "ManaCost",
+    "BaseValue": -0.01,
+    "ModifierTag": "Mod.Utility.Cost",
+    "MathOp": "Additive",
+    "RestrictionTag": "Mod.Stat.Mana"
+  },
+  {
+    "Id": "ChaosDuration",
+    "BaseValue": 0.015,
+    "ModifierTag": "Mod.Utility.Duration",
+    "MathOp": "Additive",
+    "RestrictionTag": "Restriction.Chaos"
+  },
+  {
+    "Id": "ImplicitDamage",
+    "BaseValue": 60.0,
+    "ModifierTag": "Mod.Implicit",
+    "MathOp": "Added",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "ImplicitCritHigh",
+    "BaseValue": 15.0,
+    "ModifierTag": "Mod.Offense.Critical",
+    "MathOp": "Added",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "ImplicitCritLow",
+    "BaseValue": 5.0,
+    "ModifierTag": "Mod.Offense.Critical",
+    "MathOp": "Added",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "ImplicitSpeedHigh",
+    "BaseValue": 1.1,
+    "ModifierTag": "Mod.Offense.CastSpeed",
+    "MathOp": "Multiplicative",
+    "RestrictionTag": ""
+  },
+  {
+    "Id": "ImplicitSpeedLow",
+    "BaseValue": 0.9,
+    "ModifierTag": "Mod.Offense.CastSpeed",
+    "MathOp": "Multiplicative",
+    "RestrictionTag": ""
+  }
+]

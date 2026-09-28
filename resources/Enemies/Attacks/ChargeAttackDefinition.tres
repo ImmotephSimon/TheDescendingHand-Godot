@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="ChargeAttackDefinition" format=3 uid="uid://fgxrej2614ck"]
+
+[ext_resource type="Script" uid="uid://xq0el2cejj0t" path="res://scripts/Enemy/Definition/ChargeAttackDefinition.cs" id="1_fu3t1"]
+
+[resource]
+script = ExtResource("1_fu3t1")

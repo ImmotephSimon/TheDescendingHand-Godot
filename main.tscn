@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://ochdjsjwb6br"]
+
+[ext_resource type="Script" uid="uid://de2kkqpovcwja" path="res://scripts/Core/ExposureFlicker.cs" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://l6lko8lyvs8c" path="res://scenes/main_camera.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://c7ks0ncf28in7" path="res://scenes/player.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://dnueocwmui7vh" path="res://scripts/Dungeon/Transitioning/DungeonManager.cs" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://bg65drppxcd85" path="res://scripts/Drops/DropsComponent.cs" id="6_5vw27"]
+[ext_resource type="Script" uid="uid://c7prhxyec7i17" path="res://scripts/Dungeon/DungeonGenerator.cs" id="6_272bh"]
+[ext_resource type="Resource" uid="uid://dyxdg2u1tn7xs" path="res://resources/Dungeon/DungeonConfig.tres" id="7_5vw27"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e5w43"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_qp3q4"]
+sky_material = SubResource("ProceduralSkyMaterial_e5w43")
+
+[sub_resource type="Environment" id="Environment_x6o2y"]
+background_mode = 2
+sky = SubResource("Sky_qp3q4")
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qp3q4"]
+albedo_color = Color(0.23529412, 0.23529412, 0.23529412, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6b0rn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_664kn"]
+size = Vector3(100, 0.1, 100)
+
+[node name="Main" type="Node3D" unique_id=1566663336]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=770786768]
+environment = SubResource("Environment_x6o2y")
+script = ExtResource("1_1bvp3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=326029831]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_energy = 0.47
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 25.45
+shadow_enabled = true
+
+[node name="MainCamera" parent="." unique_id=2029846995 instance=ExtResource("2_h2yge")]
+transform = Transform3D(1, 1.4901161e-08, 1.4901161e-08, -1.4901161e-08, 1, 2.220446e-16, -1.4901161e-08, -4.440892e-16, 1, 0, 0, 0)
+
+[node name="Player" parent="." unique_id=65234749 instance=ExtResource("3_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0555068, 2.455)
+
+[node name="Floor2" type="MeshInstance3D" parent="." unique_id=975317107]
+transform = Transform3D(55.97753, 0, 0, 0, 0.01, 0, 0, 0, 10, 0, 8.821644, 0)
+material_override = SubResource("StandardMaterial3D_qp3q4")
+mesh = SubResource("BoxMesh_6b0rn")
+
+[node name="Floor3" type="MeshInstance3D" parent="." unique_id=536103725]
+transform = Transform3D(74.41619, 0, 0, 0, 0.0010252967, -9.999475, 0, 0.09999474, 0.102529675, -1.5839005, 5.0792875, 4.861051)
+material_override = SubResource("StandardMaterial3D_qp3q4")
+mesh = SubResource("BoxMesh_6b0rn")
+
+[node name="Floor4" type="MeshInstance3D" parent="." unique_id=1513292793]
+transform = Transform3D(86.92993, 0, 0, 0, 0.0043732957, -9.990435, 0, 0.09990433, 0.43732953, -6.0989647, 3.6397796, -4.2624025)
+material_override = SubResource("StandardMaterial3D_qp3q4")
+mesh = SubResource("BoxMesh_6b0rn")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=534452572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8674238, 0.38140774, -3.1203113)
+light_color = Color(1, 0.54509807, 0.078431375, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1143427349]
+
+[node name="Floor" type="MeshInstance3D" parent="StaticBody3D" unique_id=463019367]
+transform = Transform3D(100, 0, 0, 0, 0.1, 0, 0, 0, 100, -0.13408661, 0, 0.17567635)
+material_override = SubResource("StandardMaterial3D_qp3q4")
+mesh = SubResource("BoxMesh_6b0rn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2063926412]
+shape = SubResource("BoxShape3D_664kn")
+
+[node name="DungeonManager" type="Node" parent="." unique_id=788921510]
+script = ExtResource("5_lquwl")
+
+[node name="DropsComponent" type="Node3D" parent="DungeonManager" unique_id=129639817]
+script = ExtResource("6_5vw27")
+metadata/_custom_type_script = "uid://bg65drppxcd85"
+
+[node name="DungeonGenerator" type="Node3D" parent="." unique_id=749624435]
+script = ExtResource("6_272bh")
+config = ExtResource("7_5vw27")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=889143767]

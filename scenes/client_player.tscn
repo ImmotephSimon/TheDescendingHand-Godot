@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bwk3e3x6rx5sm"]
+
+[ext_resource type="Script" uid="uid://cp6253rtg3t4l" path="res://scripts/Client/ClientPlayer.cs" id="1_fdnft"]
+[ext_resource type="PackedScene" uid="uid://fn1e81uip6q2" path="res://scenes/HUD/hud.tscn" id="3_ldsrj"]
+[ext_resource type="Script" uid="uid://b8xhqmvkxifta" path="res://scripts/HUD/PlayerHUD.cs" id="4_l1yby"]
+[ext_resource type="Script" uid="uid://cj7mk3v13ya8s" path="res://scripts/Client/PlayerInputController.cs" id="7_2yv61"]
+
+[node name="ClientPlayer" type="Node" unique_id=401924880]
+script = ExtResource("1_fdnft")
+
+[node name="PlayerHUD" type="Node" parent="." unique_id=1918208017]
+script = ExtResource("4_l1yby")
+hudPrefab = ExtResource("3_ldsrj")
+metadata/_custom_type_script = "uid://b8xhqmvkxifta"
+
+[node name="PlayerInputController" type="Node" parent="." unique_id=1717818250]
+script = ExtResource("7_2yv61")
+metadata/_custom_type_script = "uid://cj7mk3v13ya8s"

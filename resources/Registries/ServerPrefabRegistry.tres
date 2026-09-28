@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ServerPrefabRegistry" format=3 uid="uid://dop8lmp2fivpx"]
+
+[ext_resource type="Script" uid="uid://gylpglyypxu0" path="res://scripts/Core/ServerPrefabRegistry.cs" id="1_i0khm"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8jppg"]
+
+[resource]
+script = ExtResource("1_i0khm")

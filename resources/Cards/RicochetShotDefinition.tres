@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RicochetShotDefinition" format=3 uid="uid://dfn1r0dbpxda4"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_04c1q"]
+[ext_resource type="Script" uid="uid://dmitw84v8trgk" path="res://scripts/Cards/Definitions/RicochetShotDefinition.cs" id="2_40bal"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_rvbbf"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_1cybn"]
+script = ExtResource("1_04c1q")
+
+[resource]
+script = ExtResource("2_40bal")
+_visuals = SubResource("Resource_1cybn")
+_deckOverrides = SubResource("Resource_rvbbf")

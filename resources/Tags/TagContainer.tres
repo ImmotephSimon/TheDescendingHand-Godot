@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TagContainer" format=3 uid="uid://ctspkr4ccfqlq"]
+
+[ext_resource type="Script" uid="uid://q712caqynqcm" path="res://scripts/Tags/GameTag.cs" id="1_07i2y"]
+[ext_resource type="Script" uid="uid://dnwgqc736r3ta" path="res://scripts/Tags/TagContainer.cs" id="2_wymdy"]
+
+[resource]
+script = ExtResource("2_wymdy")

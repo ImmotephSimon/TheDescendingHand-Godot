@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Rarity" format=3 uid="uid://dye0irspltyg"]
+
+[ext_resource type="Script" uid="uid://dtik8sy2p6req" path="res://scripts/Drops/LootDefinition.cs" id="1_7gy76"]
+[ext_resource type="Script" uid="uid://p2tekestuwrs" path="res://scripts/Items/Rarity.cs" id="2_5jitr"]
+
+[resource]
+script = ExtResource("2_5jitr")
+id = "c8863094-50ab-410d-86c5-828d03f41f9e"

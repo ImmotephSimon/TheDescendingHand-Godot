@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://ba8t0yukndmup"]
+
+[ext_resource type="Script" uid="uid://ch0eysdn3oqxh" path="res://scripts/Player/ServerPlayer.cs" id="1_104ue"]
+[ext_resource type="Resource" uid="uid://eufsr44p7c2x" path="res://resources/Tags/tag_reactions.tres" id="2_chw3c"]
+[ext_resource type="Script" uid="uid://cx3titktv8jo7" path="res://scripts/Player/HealthComponent.cs" id="2_tjtec"]
+[ext_resource type="Resource" uid="uid://bsh3h5p1a1sbl" path="res://resources/player_stats.tres" id="2_y0d0o"]
+[ext_resource type="Script" uid="uid://c7iovfsmbf7aw" path="res://scripts/Player/ManaComponent.cs" id="3_q2hsu"]
+[ext_resource type="Script" uid="uid://uitweyc5idjx" path="res://scripts/StatModifiers/StatModifierComponent.cs" id="4_q2hsu"]
+[ext_resource type="Script" uid="uid://q8r6h7ub6yqa" path="res://scripts/Inventory/PlayerInventory.cs" id="5_efagl"]
+[ext_resource type="Script" uid="uid://b7y80pdyhwmi" path="res://scripts/Player/AilmentComponent.cs" id="6_yegoh"]
+[ext_resource type="Script" uid="uid://cfbk5ilvfwd3t" path="res://scripts/Player/LevelComponent.cs" id="8_6u0qv"]
+[ext_resource type="Script" uid="uid://clhfe8j3u70e0" path="res://scripts/PassiveTree/PassiveTreeComponent.cs" id="9_ch64l"]
+
+[node name="ServerPlayer" type="Node3D" unique_id=1065147456]
+script = ExtResource("1_104ue")
+_startingStats = ExtResource("2_y0d0o")
+_interactLayer = null
+_interactRange = null
+tagReactions = ExtResource("2_chw3c")
+_teamLayer = null
+metadata/_custom_type_script = "uid://ch0eysdn3oqxh"
+
+[node name="HealthComponent" type="Node3D" parent="." unique_id=1526841834]
+script = ExtResource("2_tjtec")
+metadata/_custom_type_script = "uid://cx3titktv8jo7"
+
+[node name="ManaComponent" type="Node3D" parent="." unique_id=727062720]
+script = ExtResource("3_q2hsu")
+metadata/_custom_type_script = "uid://c7iovfsmbf7aw"
+
+[node name="StatModifierComponent" type="Node3D" parent="." unique_id=368042600]
+script = ExtResource("4_q2hsu")
+metadata/_custom_type_script = "uid://uitweyc5idjx"
+
+[node name="PlayerInventory" type="Node3D" parent="." unique_id=1359501167]
+script = ExtResource("5_efagl")
+metadata/_custom_type_script = "uid://q8r6h7ub6yqa"
+
+[node name="AilmentComponent" type="Node3D" parent="." unique_id=1619317286]
+script = ExtResource("6_yegoh")
+metadata/_custom_type_script = "uid://b7y80pdyhwmi"
+
+[node name="LevelComponent" type="Node" parent="." unique_id=502981755]
+script = ExtResource("8_6u0qv")
+level = null
+metadata/_custom_type_script = "uid://cfbk5ilvfwd3t"
+
+[node name="PassiveTreeComponent" type="Node" parent="." unique_id=1566947046]
+script = ExtResource("9_ch64l")
+metadata/_custom_type_script = "uid://clhfe8j3u70e0"

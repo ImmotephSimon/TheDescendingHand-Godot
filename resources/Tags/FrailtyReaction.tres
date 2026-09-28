@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="FrailtyReaction" format=3 uid="uid://cfbc6o8rsjdg5"]
+
+[ext_resource type="Script" uid="uid://llvuvkiyjo0o" path="res://scripts/Tags/TagReactions/FrailtyReaction.cs" id="1_64y8x"]
+
+[resource]
+script = ExtResource("1_64y8x")

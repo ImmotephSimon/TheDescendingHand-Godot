@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ModifierPool" format=3 uid="uid://b0xlealyyrx4g"]
+
+[ext_resource type="Script" uid="uid://cuxftldorxod8" path="res://scripts/Items/Affixes/ModifierPoolEntry.cs" id="1_87khf"]
+[ext_resource type="Script" uid="uid://bf4ra3n0j17h" path="res://scripts/Items/Affixes/ModifierPool.cs" id="2_hxvb7"]
+
+[resource]
+script = ExtResource("2_hxvb7")
+metadata/_custom_type_script = "uid://bf4ra3n0j17h"

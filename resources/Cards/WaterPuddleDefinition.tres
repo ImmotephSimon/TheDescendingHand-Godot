@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WaterPuddleDefinition" format=3 uid="uid://cwxt67j7gjbjk"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_y21be"]
+[ext_resource type="Script" uid="uid://6wyoqphs2556" path="res://scripts/Cards/Definitions/WaterPuddleDefinition.cs" id="2_8r11u"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_kd55u"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_xvl2s"]
+script = ExtResource("1_y21be")
+
+[resource]
+script = ExtResource("2_8r11u")
+_visuals = SubResource("Resource_xvl2s")
+_deckOverrides = SubResource("Resource_kd55u")

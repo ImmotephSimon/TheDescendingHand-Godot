@@ -1,0 +1,1015 @@
+[
+	{
+		"Name": "node_0",
+		"Type": "Life",
+		"Position":
+		{
+			"X": 1411.6239009999999,
+			"Y": 1531.8629149999999
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "A",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_1",
+		"Type": "Life",
+		"Position":
+		{
+			"X": 1550,
+			"Y": 1450
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "A",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_17",
+		"Type": "Life",
+		"Position":
+		{
+			"X": 1450,
+			"Y": 1450
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "A",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_2",
+		"Type": "Armour",
+		"Position":
+		{
+			"X": 1750,
+			"Y": 1550
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_11",
+		"Type": "Physical_Damage",
+		"Position":
+		{
+			"X": 1955.8469239999999,
+			"Y": 1475.674927
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_12",
+		"Type": "Physical_Damage",
+		"Position":
+		{
+			"X": 1835.372314,
+			"Y": 1450.648193
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_18",
+		"Type": "Physical_Damage",
+		"Position":
+		{
+			"X": 1950,
+			"Y": 1550
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_19",
+		"Type": "Critical",
+		"Position":
+		{
+			"X": 2023.372314,
+			"Y": 1408.248169
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "H",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_13",
+		"Type": "Fire_Damage",
+		"Position":
+		{
+			"X": 2200,
+			"Y": 1800
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_14",
+		"Type": "Fire_Damage",
+		"Position":
+		{
+			"X": 2300,
+			"Y": 1800
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_20",
+		"Type": "Fire_Damage",
+		"Position":
+		{
+			"X": 2250,
+			"Y": 1900
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_21",
+		"Type": "Fire_Damage",
+		"Position":
+		{
+			"X": 2350,
+			"Y": 1900
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_3",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1300,
+			"Y": 1550
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_4",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1200,
+			"Y": 1600
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_5",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1100,
+			"Y": 1550
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_29",
+		"Type": "Cast_Speed",
+		"Position":
+		{
+			"X": 1200,
+			"Y": 1700
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_30",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1100,
+			"Y": 1650
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_6",
+		"Type": "Movement",
+		"Position":
+		{
+			"X": 1350,
+			"Y": 1350
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "R",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_7",
+		"Type": "Movement",
+		"Position":
+		{
+			"X": 1250,
+			"Y": 1250
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "R",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_8",
+		"Type": "Movement",
+		"Position":
+		{
+			"X": 1066.5463853842709,
+			"Y": 1234.1182979324246
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "R",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_9",
+		"Type": "Evasion",
+		"Position":
+		{
+			"X": 1200,
+			"Y": 1150
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "R",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_10",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1300,
+			"Y": 1450
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "V",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_28",
+		"Type": "Movement",
+		"Position":
+		{
+			"X": 1400,
+			"Y": 1250
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "W",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_15",
+		"Type": "Armour",
+		"Position":
+		{
+			"X": 1700,
+			"Y": 1300
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_16",
+		"Type": "Instinct",
+		"Position":
+		{
+			"X": 1725.0936280000001,
+			"Y": 1148.924072
+		},
+		"Role": "Starter",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "Y",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_25",
+		"Type": "Life",
+		"Position":
+		{
+			"X": 1900,
+			"Y": 1300
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_26",
+		"Type": "Armour",
+		"Position":
+		{
+			"X": 1950,
+			"Y": 1200
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_27",
+		"Type": "Life",
+		"Position":
+		{
+			"X": 2028.2653809999999,
+			"Y": 1299.2749020000001
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_22",
+		"Type": "Cold_Damage",
+		"Position":
+		{
+			"X": 2100,
+			"Y": 1200
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "c",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_23",
+		"Type": "Cold_Damage",
+		"Position":
+		{
+			"X": 2200,
+			"Y": 1200
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "c",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_24",
+		"Type": "Cold_Damage",
+		"Position":
+		{
+			"X": 2150,
+			"Y": 1100
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Instinct"
+				}
+			}
+		],
+		"Cluster": "c",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_31",
+		"Type": "Strength",
+		"Position":
+		{
+			"X": 1533.809448,
+			"Y": 1684.8172609999999
+		},
+		"Role": "Starter",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_32",
+		"Type": "Lightning_Damage",
+		"Position":
+		{
+			"X": 1714.1694339999999,
+			"Y": 1861.413086
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_33",
+		"Type": "Lightning_Damage",
+		"Position":
+		{
+			"X": 1628.9693600000001,
+			"Y": 1923.955688
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_34",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1631.00415,
+			"Y": 1850.15625
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_35",
+		"Type": "Lightning_Damage",
+		"Position":
+		{
+			"X": 1744.0164789999999,
+			"Y": 1978.4876710000001
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_36",
+		"Type": "Willpower",
+		"Position":
+		{
+			"X": 943.610229,
+			"Y": 1500.8782960000001
+		},
+		"Role": "Starter",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_37",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1528.5900879999999,
+			"Y": 2182.1899410000001
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_38",
+		"Type": "Mana",
+		"Position":
+		{
+			"X": 1442.9604489999999,
+			"Y": 2046.959717
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_39",
+		"Type": "Projectile_Time_Dilation",
+		"Position":
+		{
+			"X": 1665.613159,
+			"Y": 2173.0659179999998
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_40",
+		"Type": "Projectile_Time_Dilation",
+		"Position":
+		{
+			"X": 1845.21875,
+			"Y": 2306.1762699999999
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 2
+	},
+	{
+		"Name": "node_41",
+		"Type": "Reduced_Projectile_Time_Dilation",
+		"Position":
+		{
+			"X": 1521.3900149999999,
+			"Y": 2302.1899410000001
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_42",
+		"Type": "Reduced_Projectile_Time_Dilation",
+		"Position":
+		{
+			"X": 1676.955078,
+			"Y": 2442.5698240000002
+		},
+		"Role": "Unset",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			}
+		],
+		"Cluster": "M",
+		"Requirement": [],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_43",
+		"Type": "Flammability",
+		"Position":
+		{
+			"X": 2396.714020473552,
+			"Y": 1619.6627197213174
+		},
+		"Role": "Keystone",
+		"Cost": [
+			{
+				"Amount": 3,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "D",
+		"Requirement": [
+			{
+				"Amount": 15,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Neighbors": 1
+	},
+	{
+		"Name": "node_44",
+		"Type": "Buffering",
+		"Position":
+		{
+			"X": 1162.879287,
+			"Y": 1418.9283789999999
+		},
+		"Role": "Keystone",
+		"Cost": [
+			{
+				"Amount": 1,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Cluster": "s",
+		"Requirement": [
+			{
+				"Amount": 5,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Willpower"
+				}
+			},
+			{
+				"Amount": 5,
+				"Attribute":
+				{
+					"TagName": "Mod.Stat.Strength"
+				}
+			}
+		],
+		"Neighbors": 1
+	}
+]

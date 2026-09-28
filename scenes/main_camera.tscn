@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://l6lko8lyvs8c"]
+
+[ext_resource type="Script" uid="uid://b6v67irvh18xn" path="res://scripts/Player/ARPGCamera.cs" id="1_hoovk"]
+[ext_resource type="Script" uid="uid://c4ock720imvt6" path="res://scripts/Utility/GlobePositioner.cs" id="2_c4rpq"]
+[ext_resource type="PackedScene" uid="uid://dtx8ih2cb4afs" path="res://scenes/health_globe.tscn" id="3_7fu1u"]
+[ext_resource type="PackedScene" uid="uid://bjkw30bhhbubl" path="res://scenes/mana_globe.tscn" id="4_4hnl1"]
+[ext_resource type="Script" uid="uid://bmoru0r76acjb" path="res://scripts/Cards/View/CardHandView.cs" id="5_c4rpq"]
+[ext_resource type="Script" uid="uid://cj7fkm5nlat61" path="res://scripts/Cards/View/CardHandController.cs" id="6_7fu1u"]
+[ext_resource type="PackedScene" uid="uid://bu7kjlhls73pq" path="res://scenes/physical_card.tscn" id="7_4hnl1"]
+
+[node name="MainCamera" type="Node3D" unique_id=878300518]
+process_mode = 3
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=499738615]
+process_mode = 3
+script = ExtResource("1_hoovk")
+
+[node name="GlobePositioner" type="Node3D" parent="Camera3D" unique_id=402377695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.29, 2.695)
+script = ExtResource("2_c4rpq")
+healthGlobePrefab = ExtResource("3_7fu1u")
+manaGlobePrefab = ExtResource("4_4hnl1")
+metadata/_custom_type_script = "uid://c4ock720imvt6"
+
+[node name="CardHandView" type="Node3D" parent="Camera3D" unique_id=1418475201]
+transform = Transform3D(1, 0, 0, 0, 0.57357645, 0.81915206, 0, -0.81915206, 0.57357645, 0, 5.29, 2.695)
+script = ExtResource("5_c4rpq")
+metadata/_custom_type_script = "uid://bmoru0r76acjb"
+
+[node name="CardHandController" type="Node" parent="Camera3D" unique_id=2122192154 node_paths=PackedStringArray("handView")]
+script = ExtResource("6_7fu1u")
+handView = NodePath("../CardHandView")
+physicalCardPrefab = ExtResource("7_4hnl1")
+metadata/_custom_type_script = "uid://cj7fkm5nlat61"

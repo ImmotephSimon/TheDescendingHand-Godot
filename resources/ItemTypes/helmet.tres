@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EquipmentType" format=3 uid="uid://bjwcxq2dxpy7h"]
+
+[ext_resource type="Resource" uid="uid://b0xlealyyrx4g" path="res://resources/armour_mods.tres" id="1_2tiiw"]
+[ext_resource type="Script" uid="uid://dwwjm5x0wsn8h" path="res://scripts/Items/EquipmentType.cs" id="1_pkr5u"]
+
+[resource]
+script = ExtResource("1_pkr5u")
+ModifierPool = ExtResource("1_2tiiw")
+metadata/_custom_type_script = "uid://dwwjm5x0wsn8h"

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://blp2i8d53ub57"]
+
+[ext_resource type="Script" uid="uid://dxeaipmrnf18g" path="res://scripts/PassiveTree/PassiveNodeView.cs" id="1_pjrcv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c57u"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0.744257, 0.54152113, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="PassiveNodeView" type="Control" unique_id=881830707 node_paths=PackedStringArray("_image", "_selectionHighlight", "_allocatedHighlight")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_pjrcv")
+_image = NodePath("Image")
+_selectionHighlight = NodePath("SelectionHighlight")
+_allocatedHighlight = NodePath("AllocationHighlight")
+metadata/_custom_type_script = "uid://dxeaipmrnf18g"
+
+[node name="AllocationHighlight" type="Panel" parent="." unique_id=1222635977]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4c57u")
+
+[node name="Image" type="TextureRect" parent="." unique_id=375058544]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SelectionHighlight" type="Panel" parent="." unique_id=1131076970]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4c57u")

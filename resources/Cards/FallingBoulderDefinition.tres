@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="FallingBoulderDefinition" format=3 uid="uid://b6tnc2n6g25hi"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_5qqti"]
+[ext_resource type="Script" uid="uid://ddtltnusaf6tp" path="res://scripts/Cards/Definitions/FallingBoulderDefinition.cs" id="2_khdgh"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_elfbt"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_yi2da"]
+script = ExtResource("1_5qqti")
+
+[resource]
+script = ExtResource("2_khdgh")
+_visuals = SubResource("Resource_yi2da")
+_deckOverrides = SubResource("Resource_elfbt")

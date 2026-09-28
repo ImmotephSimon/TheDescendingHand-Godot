@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://fn1e81uip6q2"]
+
+[ext_resource type="Script" uid="uid://c16graycncgxt" path="res://scripts/HUD/HUD.cs" id="1_tbtrp"]
+[ext_resource type="Script" uid="uid://l3a7otk5g3y" path="res://scripts/Inventory/InventoryView.cs" id="2_bg0qy"]
+[ext_resource type="Script" uid="uid://ciwab1r8dg5ss" path="res://scripts/Inventory/LoadoutView.cs" id="3_74e12"]
+[ext_resource type="Script" uid="uid://kye5eqagdkx4" path="res://scripts/PassiveTree/PassiveTreeView.cs" id="4_pdy2d"]
+[ext_resource type="Resource" uid="uid://bxhnd0l5kr0fb" path="res://resources/PassiveTree/PassiveTreeData.tres" id="5_5m2cf"]
+[ext_resource type="PackedScene" uid="uid://blp2i8d53ub57" path="res://scenes/passive_node_view.tscn" id="6_yt4xk"]
+[ext_resource type="PackedScene" uid="uid://c0ed1mnrly1v6" path="res://scenes/passive_connection.tscn" id="7_4l2l0"]
+[ext_resource type="PackedScene" uid="uid://c3wk5hqtas4w7" path="res://scenes/passive_tooltip.tscn" id="8_6e3el"]
+
+[sub_resource type="Theme" id="Theme_664kn"]
+default_font_size = 45
+
+[node name="HUD" type="Control" unique_id=199577290 node_paths=PackedStringArray("experienceBar", "healthText", "manaText", "zoneText")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tbtrp")
+experienceBar = NodePath("OverlayLayer/ExperienceBar")
+healthText = NodePath("OverlayLayer/HealthText")
+manaText = NodePath("OverlayLayer/ManaText")
+zoneText = NodePath("OverlayLayer/ZoneText")
+metadata/_custom_type_script = "uid://c16graycncgxt"
+
+[node name="WindowLayer" type="Control" parent="." unique_id=1466641490]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryView" type="Control" parent="WindowLayer" unique_id=644528389]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_bg0qy")
+metadata/_custom_type_script = "uid://l3a7otk5g3y"
+
+[node name="LoadoutView" type="Control" parent="WindowLayer" unique_id=604634372]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_74e12")
+metadata/_custom_type_script = "uid://ciwab1r8dg5ss"
+
+[node name="PassiveTreeView" type="Control" parent="WindowLayer" unique_id=1241269624 node_paths=PackedStringArray("_container", "_window", "_tooltipLayer")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_pdy2d")
+_data = ExtResource("5_5m2cf")
+_container = NodePath("Window/Container")
+_nodePrefab = ExtResource("6_yt4xk")
+_connectionPrefab = ExtResource("7_4l2l0")
+_window = NodePath("Window")
+_tooltipPrefab = ExtResource("8_6e3el")
+_tooltipLayer = NodePath("../../TooltipLayer")
+metadata/_custom_type_script = "uid://kye5eqagdkx4"
+
+[node name="Window" type="Panel" parent="WindowLayer/PassiveTreeView" unique_id=638110079]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="WindowLayer/PassiveTreeView/Window" unique_id=1845330760]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container" type="Control" parent="WindowLayer/PassiveTreeView/Window" unique_id=1423750821]
+anchors_preset = 0
+offset_right = 10000.0
+offset_bottom = 10000.0
+
+[node name="Control" type="Control" parent="WindowLayer" unique_id=1842536350]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OverlayLayer" type="Control" parent="." unique_id=1264068998]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthText" type="RichTextLabel" parent="OverlayLayer" unique_id=1625662123]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 720.0
+offset_right = 314.0
+offset_bottom = 794.0
+theme = SubResource("Theme_664kn")
+text = "20/20
+"
+
+[node name="ManaText" type="RichTextLabel" parent="OverlayLayer" unique_id=1966406617]
+layout_mode = 0
+offset_left = 1543.0
+offset_top = 724.0
+offset_right = 1673.0
+offset_bottom = 798.0
+theme = SubResource("Theme_664kn")
+text = "20/20
+"
+
+[node name="ZoneText" type="RichTextLabel" parent="OverlayLayer" unique_id=1116992929]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -130.0
+offset_bottom = 74.0
+grow_horizontal = 0
+theme = SubResource("Theme_664kn")
+text = "Monster level: ??"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 2
+
+[node name="ExperienceBar" type="ProgressBar" parent="OverlayLayer" unique_id=832857807]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -27.0
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = false
+
+[node name="TooltipLayer" type="Control" parent="." unique_id=143513235]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" parent="TooltipLayer" unique_id=53433522 instance=ExtResource("7_4l2l0")]
+layout_mode = 0

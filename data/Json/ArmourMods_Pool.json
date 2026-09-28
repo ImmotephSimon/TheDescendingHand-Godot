@@ -1,0 +1,67 @@
+[
+    {
+        "Definition": "Life",
+        "Weight": 100,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "Mana",
+        "Weight": 100,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "IncImplicit",
+        "Weight": 50,
+        "Slot": "Unset"
+    },
+    {
+        "Definition": "Miti1",
+        "Weight": 50,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "Miti2",
+        "Weight": 100,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "Miti3",
+        "Weight": 100,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "Miti4",
+        "Weight": 100,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "Miti5",
+        "Weight": 100,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "Glancing",
+        "Weight": 20,
+        "Slot": "Prefix"
+    },
+    {
+        "Definition": "LifeCost",
+        "Weight": 20,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "ManaCost",
+        "Weight": 20,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "ChaosDuration",
+        "Weight": 20,
+        "Slot": "Suffix"
+    },
+    {
+        "Definition": "ImplicitMitiPhys",
+        "Weight": 0,
+        "Slot": "Implicit"
+    }
+]

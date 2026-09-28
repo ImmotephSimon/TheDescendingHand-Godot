@@ -1,0 +1,93 @@
+[gd_resource type="AnimationNodeStateMachine" format=3 uid="uid://bi8oqxfxe6fb0"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3j3xg"]
+animation = &"lib/cast"
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_q5fgy"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q5fgy"]
+animation = &"lib/HumanM_Run01_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2vui5"]
+animation = &"lib/HumanM_Run01_Right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_plq1o"]
+animation = &"lib/HumanM_Run01_ForwardRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xsw0n"]
+animation = &"lib/HumanM_Run01_ForwardLeft"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rwwhg"]
+animation = &"lib/HumanM_Run01_BackwardLeft"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ifajw"]
+animation = &"lib/HumanM_Run01_BackwardRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qfp5f"]
+animation = &"lib/HumanM_Run01_Forward"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ctm71"]
+animation = &"lib/HumanM_Run01_Backward"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8t7kn"]
+animation = &"lib/idle"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_2vui5"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_q5fgy")
+blend_point_0/pos = Vector2(0.8, 0)
+blend_point_0/name = &"lib_HumanM_Run01_Left"
+blend_point_1/node = SubResource("AnimationNodeAnimation_2vui5")
+blend_point_1/pos = Vector2(-1, 0)
+blend_point_1/name = &"lib_HumanM_Run01_Right"
+blend_point_2/node = SubResource("AnimationNodeAnimation_plq1o")
+blend_point_2/pos = Vector2(-1, -1)
+blend_point_2/name = &"lib_HumanM_Run01_ForwardRight"
+blend_point_3/node = SubResource("AnimationNodeAnimation_xsw0n")
+blend_point_3/pos = Vector2(1, -1)
+blend_point_3/name = &"lib_HumanM_Run01_ForwardLeft"
+blend_point_4/node = SubResource("AnimationNodeAnimation_rwwhg")
+blend_point_4/pos = Vector2(1, 1)
+blend_point_4/name = &"lib_HumanM_Run01_BackwardLeft"
+blend_point_5/node = SubResource("AnimationNodeAnimation_ifajw")
+blend_point_5/pos = Vector2(-1, 1)
+blend_point_5/name = &"lib_HumanM_Run01_BackwardRight"
+blend_point_6/node = SubResource("AnimationNodeAnimation_qfp5f")
+blend_point_6/pos = Vector2(0, -1)
+blend_point_6/name = &"lib_HumanM_Run01_Forward"
+blend_point_7/node = SubResource("AnimationNodeAnimation_ctm71")
+blend_point_7/pos = Vector2(0, 1)
+blend_point_7/name = &"lib_HumanM_Run01_Backward"
+blend_point_8/node = SubResource("AnimationNodeAnimation_8t7kn")
+blend_point_8/pos = Vector2(0, 0)
+blend_point_8/name = &"lib_idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_nlohg"]
+animation = &"lib/cast"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_plq1o"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_nlohg")
+blend_point_0/pos = Vector2(0, 0)
+blend_point_0/name = &"lib_cast"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_xsw0n"]
+graph_offset = Vector2(17.6, 35.2)
+nodes/output/position = Vector2(1184, 160)
+nodes/Run/node = SubResource("AnimationNodeBlendSpace2D_2vui5")
+nodes/Run/position = Vector2(752, 64)
+nodes/Sprint/node = SubResource("AnimationNodeBlendSpace2D_plq1o")
+nodes/Sprint/position = Vector2(752, 304)
+nodes/Blend2/node = SubResource("AnimationNodeBlend2_q5fgy")
+nodes/Blend2/position = Vector2(1024, 144)
+node_connections = [&"output", 0, &"Blend2", &"Blend2", 0, &"Run", &"Blend2", 1, &"Sprint"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_q5fgy"]
+advance_mode = 2
+
+[resource]
+states/Casting/node = SubResource("AnimationNodeAnimation_3j3xg")
+states/Casting/position = Vector2(350.2, 87.00637)
+states/Locomotion/node = SubResource("AnimationNodeBlendTree_xsw0n")
+states/Locomotion/position = Vector2(279, 188.51999)
+states/Start/position = Vector2(78.399994, 100.46032)
+transitions = ["Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_q5fgy")]
+graph_offset = Vector2(-463, 9)

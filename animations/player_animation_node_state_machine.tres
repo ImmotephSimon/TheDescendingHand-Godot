@@ -1,0 +1,4 @@
+[gd_resource type="AnimationNodeStateMachine" format=3 uid="uid://3be2rcfe6lnr"]
+
+[resource]
+graph_offset = Vector2(-117, -4)

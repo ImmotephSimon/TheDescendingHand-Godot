@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ShockwaveDefinition" format=3 uid="uid://cqkjmvfay56xn"]
+
+[ext_resource type="Script" uid="uid://bpf2xf4gifqvg" path="res://scripts/Cards/CardVisuals.cs" id="1_fmslw"]
+[ext_resource type="Script" uid="uid://lsshjjsrb4g4" path="res://scripts/Cards/Definitions/ShockwaveDefinition.cs" id="2_mothg"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_8q725"]
+
+[sub_resource type="Resource" id="Resource_e3xnd"]
+script = SubResource("CSharpScript_8q725")
+
+[sub_resource type="Resource" id="Resource_i2uss"]
+script = ExtResource("1_fmslw")
+
+[resource]
+script = ExtResource("2_mothg")
+_visuals = SubResource("Resource_i2uss")
+_deckOverrides = SubResource("Resource_e3xnd")

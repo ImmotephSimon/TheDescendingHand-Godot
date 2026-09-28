@@ -1,0 +1,119 @@
+[
+  {
+    "Id": "Life",
+    "Weight": 100,
+    "BaseValue": 0.01,
+    "ModifierTag": "Mod.Stat.Health",
+    "RestrictionTag": "",
+    "MathOp": "Additive",
+    "SlotType": "Prefix"
+  },
+  {
+    "Id": "Mana",
+    "Weight": 100,
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Stat.Mana",
+    "RestrictionTag": "",
+    "MathOp": "Added",
+    "SlotType": "Prefix"
+  },
+  {
+    "Id": "IncImplicit",
+    "Weight": 50,
+    "BaseValue": 0.05,
+    "ModifierTag": "Mod.Implicit",
+    "RestrictionTag": "",
+    "MathOp": "Additive",
+    "SlotType": "Unset"
+  },
+  {
+    "Id": "Miti1",
+    "Weight": 50,
+    "BaseValue": 2.0,
+    "ModifierTag": "Mod.Defense.Mitigation",
+    "RestrictionTag": "Restriction.Physical",
+    "MathOp": "Added",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "Miti2",
+    "Weight": 100,
+    "BaseValue": 3.0,
+    "ModifierTag": "Mod.Defense.Mitigation",
+    "RestrictionTag": "Restriction.Element.Fire",
+    "MathOp": "Added",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "Miti3",
+    "Weight": 100,
+    "BaseValue": 3.0,
+    "ModifierTag": "Mod.Defense.Mitigation",
+    "RestrictionTag": "Restriction.Element.Cold",
+    "MathOp": "Added",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "Miti4",
+    "Weight": 100,
+    "BaseValue": 3.0,
+    "ModifierTag": "Mod.Defense.Mitigation",
+    "RestrictionTag": "Restriction.Element.Lightning",
+    "MathOp": "Added",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "Miti5",
+    "Weight": 100,
+    "BaseValue": 3.0,
+    "ModifierTag": "Mod.Defense.Mitigation",
+    "RestrictionTag": "Restriction.Chaos",
+    "MathOp": "Added",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "Glancing",
+    "Weight": 20,
+    "BaseValue": 0.015,
+    "ModifierTag": "Mod.Defense.Glancing",
+    "RestrictionTag": "",
+    "MathOp": "Additive",
+    "SlotType": "Prefix"
+  },
+  {
+    "Id": "LifeCost",
+    "Weight": 20,
+    "BaseValue": -0.015,
+    "ModifierTag": "Mod.Utility.Cost",
+    "RestrictionTag": "Mod.Stat.Health",
+    "MathOp": "Additive",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "ManaCost",
+    "Weight": 20,
+    "BaseValue": -0.005,
+    "ModifierTag": "Mod.Utility.Cost",
+    "RestrictionTag": "Mod.Stat.Mana",
+    "MathOp": "Additive",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "ChaosDuration",
+    "Weight": 20,
+    "BaseValue": 0.02,
+    "ModifierTag": "Mod.Utility.Duration",
+    "RestrictionTag": "Restriction.Chaos",
+    "MathOp": "Additive",
+    "SlotType": "Suffix"
+  },
+  {
+    "Id": "ImplicitMitiPhys",
+    "Weight": 0,
+    "BaseValue": 5.0,
+    "ModifierTag": "Mod.Defense.Mitigation",
+    "RestrictionTag": "Restriction.Physical",
+    "MathOp": "Added",
+    "SlotType": "Implicit"
+  }
+]

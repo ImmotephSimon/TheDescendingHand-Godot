@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ItemRegistry" format=3 uid="uid://peiby3r7jnio"]
+
+[ext_resource type="Script" uid="uid://xpab7n18rw0c" path="res://scripts/Items/ItemDefinition.cs" id="1_u7ca2"]
+[ext_resource type="Script" uid="uid://p2tekestuwrs" path="res://scripts/Items/Rarity.cs" id="2_mxaqm"]
+[ext_resource type="Script" uid="uid://d2qiukufmvjta" path="res://scripts/Items/ItemRegistry.cs" id="3_wa8fn"]
+
+[resource]
+script = ExtResource("3_wa8fn")

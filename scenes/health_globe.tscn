@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dtx8ih2cb4afs"]
+
+[ext_resource type="Script" uid="uid://dm0yvblqvoh8m" path="res://scripts/HUD/LiquidWobble.cs" id="1_tdrdq"]
+[ext_resource type="Shader" uid="uid://chlt7272jay2h" path="res://materials/liquid.gdshader" id="2_joi1p"]
+[ext_resource type="Shader" uid="uid://dnlha0fu4ecpi" path="res://materials/glass.gdshader" id="2_vv5j3"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_664kn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_joi1p"]
+render_priority = 0
+shader = ExtResource("2_vv5j3")
+shader_parameter/bump_scale = 0.5
+shader_parameter/base_color = Color(1, 1, 1, 1)
+shader_parameter/albedo_opacity = 0.05
+shader_parameter/distortion = 0.01
+shader_parameter/fresnel_color = Color(1, 1, 1, 1)
+shader_parameter/fresnel_power = 5.0
+shader_parameter/min_alpha = 0.05
+
+[sub_resource type="SphereMesh" id="SphereMesh_6b0rn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_do5qk"]
+render_priority = 0
+shader = ExtResource("2_joi1p")
+shader_parameter/light_color = Color(1, 0, 0, 1)
+shader_parameter/dark_color = Color(0.2, 0, 0, 1)
+shader_parameter/fill_percentage = 1.0
+shader_parameter/current_tilt = Vector3(0, 0, 0)
+
+[node name="health_globe" type="Node3D" unique_id=2016909025]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=647652907]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+mesh = SubResource("SphereMesh_664kn")
+surface_material_override/0 = SubResource("ShaderMaterial_joi1p")
+
+[node name="LiquidWobble" type="MeshInstance3D" parent="MeshInstance3D" unique_id=537677726]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 0, 0, 0)
+mesh = SubResource("SphereMesh_6b0rn")
+surface_material_override/0 = SubResource("ShaderMaterial_do5qk")
+script = ExtResource("1_tdrdq")
+metadata/_custom_type_script = "uid://dm0yvblqvoh8m"
